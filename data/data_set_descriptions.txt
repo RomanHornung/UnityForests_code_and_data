@@ -1,0 +1,6720 @@
+
+Name: credit-g, Id: 31
+"dataset172_credit-g_id31.Rda"
+
+
+**Author**: Dr. Hans Hofmann  
+**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)) - 1994    
+**Please cite**: [UCI](https://archive.ics.uci.edu/ml/citation_policy.html)
+
+**German Credit dataset**  
+This dataset classifies people described by a set of attributes as good or bad credit risks.
+
+This dataset comes with a cost matrix: 
+``` 
+Good  Bad (predicted)  
+Good   0    1   (actual)  
+Bad    5    0  
+```
+
+It is worse to class a customer as good when they are bad (5), than it is to class a customer as bad when they are good (1).  
+
+### Attribute description  
+
+1. Status of existing checking account, in Deutsche Mark.  
+2. Duration in months  
+3. Credit history (credits taken, paid back duly, delays, critical accounts)  
+4. Purpose of the credit (car, television,...)  
+5. Credit amount  
+6. Status of savings account/bonds, in Deutsche Mark.  
+7. Present employment, in number of years.  
+8. Installment rate in percentage of disposable income  
+9. Personal status (married, single,...) and sex  
+10. Other debtors / guarantors  
+11. Present residence since X years  
+12. Property (e.g. real estate)  
+13. Age in years  
+14. Other installment plans (banks, stores)  
+15. Housing (rent, own,...)  
+16. Number of existing credits at this bank  
+17. Job  
+18. Number of people being liable to provide maintenance for  
+19. Telephone (yes,no)  
+20. Foreign worker (yes,no)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: diabetes, Id: 37
+"dataset1_diabetes_id37.Rda"
+
+
+**Author**: [Vincent Sigillito](vgs@aplcen.apl.jhu.edu)  
+
+**Source**: [Obtained from UCI](https://archive.ics.uci.edu/ml/datasets/pima+indians+diabetes) 
+
+**Please cite**: [UCI citation policy](https://archive.ics.uci.edu/ml/citation_policy.html)  
+
+1. Title: Pima Indians Diabetes Database
+ 
+ 2. Sources:
+    (a) Original owners: National Institute of Diabetes and Digestive and
+                         Kidney Diseases
+    (b) Donor of database: Vincent Sigillito (vgs@aplcen.apl.jhu.edu)
+                           Research Center, RMI Group Leader
+                           Applied Physics Laboratory
+                           The Johns Hopkins University
+                           Johns Hopkins Road
+                           Laurel, MD 20707
+                           (301) 953-6231
+    (c) Date received: 9 May 1990
+ 
+ 3. Past Usage:
+     1. Smith,~J.~W., Everhart,~J.~E., Dickson,~W.~C., Knowler,~W.~C., &
+        Johannes,~R.~S. (1988). Using the ADAP learning algorithm to forecast
+        the onset of diabetes mellitus.  In {it Proceedings of the Symposium
+        on Computer Applications and Medical Care} (pp. 261--265).  IEEE
+        Computer Society Press.
+ 
+        The diagnostic, binary-valued variable investigated is whether the
+        patient shows signs of diabetes according to World Health Organization
+        criteria (i.e., if the 2 hour post-load plasma glucose was at least 
+        200 mg/dl at any survey  examination or if found during routine medical
+        care).   The population lives near Phoenix, Arizona, USA.
+ 
+        Results: Their ADAP algorithm makes a real-valued prediction between
+        0 and 1.  This was transformed into a binary decision using a cutoff of 
+        0.448.  Using 576 training instances, the sensitivity and specificity
+        of their algorithm was 76% on the remaining 192 instances.
+ 
+ 4. Relevant Information:
+       Several constraints were placed on the selection of these instances from
+       a larger database.  In particular, all patients here are females at
+       least 21 years old of Pima Indian heritage.  ADAP is an adaptive learning
+       routine that generates and executes digital analogs of perceptron-like
+       devices.  It is a unique algorithm; see the paper for details.
+ 
+ 5. Number of Instances: 768
+ 
+ 6. Number of Attributes: 8 plus class 
+ 
+ 7. For Each Attribute: (all numeric-valued)
+    1. Number of times pregnant
+    2. Plasma glucose concentration a 2 hours in an oral glucose tolerance test
+    3. Diastolic blood pressure (mm Hg)
+    4. Triceps skin fold thickness (mm)
+    5. 2-Hour serum insulin (mu U/ml)
+    6. Body mass index (weight in kg/(height in m)^2)
+    7. Diabetes pedigree function
+    8. Age (years)
+    9. Class variable (0 or 1)
+ 
+ 8. Missing Attribute Values: None
+ 
+ 9. Class Distribution: (class value 1 is interpreted as "tested positive for
+    diabetes")
+ 
+    Class Value  Number of instances
+    0            500
+    1            268
+ 
+ 10. Brief statistical analysis:
+ 
+     Attribute number:    Mean:   Standard Deviation:
+     1.                     3.8     3.4
+     2.                   120.9    32.0
+     3.                    69.1    19.4
+     4.                    20.5    16.0
+     5.                    79.8   115.2
+     6.                    32.0     7.9
+     7.                     0.5     0.3
+     8.                    33.2    11.8
+ 
+ 
+
+
+
+
+ Relabeled values in attribute 'class'
+    From: 0                       To: tested_negative     
+    From: 1                       To: tested_positive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: sonar, Id: 40
+"dataset2_sonar_id40.Rda"
+
+
+**Author**:   
+**Source**: Unknown -   
+**Please cite**:   
+
+NAME: Sonar, Mines vs. Rocks
+ 
+ SUMMARY: This is the data set used by Gorman and Sejnowski in their study
+ of the classification of sonar signals using a neural network [1].  The
+ task is to train a network to discriminate between sonar signals bounced
+ off a metal cylinder and those bounced off a roughly cylindrical rock.
+ 
+ SOURCE: The data set was contributed to the benchmark collection by Terry
+ Sejnowski, now at the Salk Institute and the University of California at
+ San Deigo.  The data set was developed in collaboration with R. Paul
+ Gorman of Allied-Signal Aerospace Technology Center.
+ 
+ MAINTAINER: Scott E. Fahlman
+ 
+ PROBLEM DESCRIPTION:
+ 
+ The file "sonar.mines" contains 111 patterns obtained by bouncing sonar
+ signals off a metal cylinder at various angles and under various
+ conditions.  The file "sonar.rocks" contains 97 patterns obtained from
+ rocks under similar conditions.  The transmitted sonar signal is a
+ frequency-modulated chirp, rising in frequency.  The data set contains
+ signals obtained from a variety of different aspect angles, spanning 90
+ degrees for the cylinder and 180 degrees for the rock.
+ 
+ Each pattern is a set of 60 numbers in the range 0.0 to 1.0.  Each number
+ represents the energy within a particular frequency band, integrated over
+ a certain period of time.  The integration aperture for higher frequencies
+ occur later in time, since these frequencies are transmitted later during
+ the chirp.
+ 
+ The label associated with each record contains the letter "R" if the object
+ is a rock and "M" if it is a mine (metal cylinder).  The numbers in the
+ labels are in increasing order of aspect angle, but they do not encode the
+ angle directly.
+ 
+ METHODOLOGY: 
+ 
+ This data set can be used in a number of different ways to test learning
+ speed, quality of ultimate learning, ability to generalize, or combinations
+ of these factors.
+ 
+ In [1], Gorman and Sejnowski report two series of experiments: an
+ "aspect-angle independent" series, in which the whole data set is used
+ without controlling for aspect angle, and an "aspect-angle dependent"
+ series in which the training and testing sets were carefully controlled to
+ ensure that each set contained cases from each aspect angle in
+ appropriate proportions.
+ 
+ For the aspect-angle independent experiments the combined set of 208 cases
+ is divided randomly into 13 disjoint sets with 16 cases in each.  For each
+ experiment, 12 of these sets are used as training data, while the 13th is
+ reserved for testing.  The experiment is repeated 13 times so that every
+ case appears once as part of a test set.  The reported performance is an
+ average over the entire set of 13 different test sets, each run 10 times.
+ 
+ It was observed that this random division of the sample set led to rather
+ uneven performance.  A few of the splits gave poor results, presumably
+ because the test set contains some samples from aspect angles that are
+ under-represented in the corresponding training set.  This motivated Gorman
+ and Sejnowski to devise a different set of experiments in which an attempt
+ was made to balance the training and test sets so that each would have a
+ representative number of samples from all aspect angles.  Since detailed
+ aspect angle information was not present in the data base of samples, the
+ 208 samples were first divided into clusters, using a 60-dimensional
+ Euclidian metric; each of these clusters was then divided between the
+ 104-member training set and the 104-member test set.  
+ 
+ The actual training and testing samples used for the "aspect angle
+ dependent" experiments are marked in the data files.  The reported
+ performance is an average over 10 runs with this single division of the
+ data set.
+ 
+ A standard back-propagation network was used for all experiments.  The
+ network had 60 inputs and 2 output units, one indicating a cylinder and the
+ other a rock.  Experiments were run with no hidden units (direct
+ connections from each input to each output) and with a single hidden layer
+ with 2, 3, 6, 12, or 24 units.  Each network was trained by 300 epochs over
+ the entire training set.
+ 
+ The weight-update formulas used in this study were slightly different from
+ the standard form.  A learning rate of 2.0 and momentum of 0.0 was used.
+ Errors less than 0.2 were treated as zero.  Initial weights were uniform
+ random values in the range -0.3 to +0.3.
+ 
+ RESULTS: 
+ 
+ For the angle independent experiments, Gorman and Sejnowski report the
+ following results for networks with different numbers of hidden units:
+ 
+ Hidden	% Right on	Std.	% Right on	Std.
+ Units	Training set	Dev.	Test Set	Dev.
+ ------	------------	----	----------	----
+ 0	89.4		2.1	77.1		8.3
+ 2	96.5		0.7	81.9		6.2
+ 3	98.8		0.4	82.0		7.3
+ 6	99.7		0.2	83.5		5.6
+ 12	99.8		0.1	84.7		5.7
+ 24	99.8		0.1	84.5		5.7
+ 
+ For the angle-dependent experiments Gorman and Sejnowski report the
+ following results:
+ 
+ Hidden	% Right on	Std.	% Right on	Std.
+ Units	Training set	Dev.	Test Set	Dev.
+ ------	------------	----	----------	----
+ 0	79.3		3.4	73.1		4.8
+ 2	96.2		2.2	85.7		6.3
+ 3	98.1		1.5	87.6		3.0
+ 6	99.4		0.9	89.3		2.4
+ 12	99.8		0.6	90.4		1.8
+ 24     100.0		0.0	89.2		1.4
+ 
+ Not surprisingly, the network's performance on the test set was somewhat
+ better when the aspect angles in the training and test sets were balanced.
+ 
+ Gorman and Sejnowski further report that a nearest neighbor classifier on
+ the same data gave an 82.7% probability of correct classification.
+ 
+ Three trained human subjects were each tested on 100 signals, chosen at
+ random from the set of 208 returns used to create this data set.  Their
+ responses ranged between 88% and 97% correct.  However, they may have been
+ using information from the raw sonar signal that is not preserved in the
+ processed data sets presented here.
+ 
+ REFERENCES: 
+ 
+ 1. Gorman, R. P., and Sejnowski, T. J. (1988).  "Analysis of Hidden Units
+ in a Layered Network Trained to Classify Sonar Targets" in Neural Networks,
+ Vol. 1, pp. 75-89.
+
+
+
+
+ Relabeled values in attribute 'Class'
+    From: R                       To: Rock                
+    From: M                       To: Mine
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: haberman, Id: 43
+"dataset3_haberman_id43.Rda"
+
+
+**Author**:   
+**Source**: Unknown -   
+**Please cite**:   
+
+1. Title: Haberman's Survival Data
+ 
+ 2. Sources:
+    (a) Donor:   Tjen-Sien Lim (limt@stat.wisc.edu)
+    (b) Date:    March 4, 1999
+ 
+ 3. Past Usage:
+    1. Haberman, S. J. (1976). Generalized Residuals for Log-Linear
+       Models, Proceedings of the 9th International Biometrics
+       Conference, Boston, pp. 104-122.
+    2. Landwehr, J. M., Pregibon, D., and Shoemaker, A. C. (1984),
+       Graphical Models for Assessing Logistic Regression Models (with
+       discussion), Journal of the American Statistical Association 79:
+       61-83.
+    3. Lo, W.-D. (1993). Logistic Regression Trees, PhD thesis,
+       Department of Statistics, University of Wisconsin, Madison, WI.
+ 
+ 4. Relevant Information:
+    The dataset contains cases from a study that was conducted between
+    1958 and 1970 at the University of Chicago's Billings Hospital on
+    the survival of patients who had undergone surgery for breast
+    cancer.
+ 
+ 5. Number of Instances: 306
+ 
+ 6. Number of Attributes: 4 (including the class attribute)
+ 
+ 7. Attribute Information:
+    1. Age of patient at time of operation (numerical)
+    2. Patient's year of operation (year - 1900, numerical)
+    3. Number of positive axillary nodes detected (numerical)
+    4. Survival status (class attribute)
+          1 = the patient survived 5 years or longer
+          2 = the patient died within 5 year
+ 
+ 8. Missing Attribute Values: None
+
+ Information about the dataset
+ CLASSTYPE: nominal
+ CLASSINDEX: last
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: spambase, Id: 44
+"dataset207_spambase_id44.Rda"
+
+
+**Author**: Mark Hopkins, Erik Reeber, George Forman, Jaap Suermondt    
+**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/spambase)   
+**Please cite**: [UCI](https://archive.ics.uci.edu/ml/citation_policy.html)
+
+SPAM E-mail Database  
+The "spam" concept is diverse: advertisements for products/websites, make money fast schemes, chain letters, pornography... Our collection of spam e-mails came from our postmaster and individuals who had filed spam.  Our collection of non-spam e-mails came from filed work and personal e-mails, and hence the word 'george' and the area code '650' are indicators of non-spam.  These are useful when constructing a personalized spam filter.  One would either have to blind such non-spam indicators or get a very wide collection of non-spam to generate a general purpose spam filter.
+ 
+For background on spam:  
+Cranor, Lorrie F., LaMacchia, Brian A.  Spam! Communications of the ACM, 41(8):74-83, 1998.  
+
+### Attribute Information:  
+The last column denotes whether the e-mail was considered spam (1) or not (0), i.e. unsolicited commercial e-mail. Most of the attributes indicate whether a particular word or character was frequently occurring in the e-mail. The run-length attributes (55-57) measure the length of sequences of consecutive capital letters.  
+
+For the statistical measures of each attribute, see the end of this file. Here are the definitions of the attributes:  
+
+48 continuous real [0,100] attributes of type  
+word_freq_WORD = percentage of words in the e-mail that match WORD,  i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail.  A "word" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string.
+ 
+6 continuous real [0,100] attributes of type char_freq_CHAR = percentage of characters in the e-mail that match CHAR, i.e. 100 * (number of CHAR occurences) / total characters in e-mail
+ 
+1 continuous real [1,...] attribute of type capital_run_length_average
+ = average length of uninterrupted sequences of capital letters
+ 
+1 continuous integer [1,...] attribute of type capital_run_length_longest
+ = length of longest uninterrupted sequence of capital letters
+ 
+1 continuous integer [1,...] attribute of type capital_run_length_total
+ = sum of length of uninterrupted sequences of capital letters
+ = total number of capital letters in the e-mail
+ 
+1 nominal {0,1} class attribute of type spam
+ = denotes whether the e-mail was considered spam (1) or not (0), 
+ i.e. unsolicited commercial e-mail.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: tic-tac-toe, Id: 50
+"dataset4_tic-tac-toe_id50.Rda"
+
+
+**Author**: David W. Aha    
+**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/Tic-Tac-Toe+Endgame) - 1991   
+**Please cite**: [UCI](http://archive.ics.uci.edu/ml/citation_policy.html)
+
+**Tic-Tac-Toe Endgame database**  
+This database encodes the complete set of possible board configurations at the end of tic-tac-toe games, where "x" is assumed to have played first.  The target concept is "win for x" (i.e., true when "x" has one of 8 possible ways to create a "three-in-a-row").  
+
+### Attribute Information  
+
+     (x=player x has taken, o=player o has taken, b=blank)
+     1. top-left-square: {x,o,b}
+     2. top-middle-square: {x,o,b}
+     3. top-right-square: {x,o,b}
+     4. middle-left-square: {x,o,b}
+     5. middle-middle-square: {x,o,b}
+     6. middle-right-square: {x,o,b}
+     7. bottom-left-square: {x,o,b}
+     8. bottom-middle-square: {x,o,b}
+     9. bottom-right-square: {x,o,b}
+    10. Class: {positive,negative}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: heart-statlog, Id: 53
+"dataset5_heart-statlog_id53.Rda"
+
+
+**Author**:   
+**Source**: Unknown -   
+**Please cite**:   
+
+This database contains 13 attributes (which have been extracted from
+ a larger set of 75)       
+   
+ 
+ 
+ Attribute Information:
+ ------------------------
+       -- 1. age       
+       -- 2. sex       
+       -- 3. chest pain type  (4 values)       
+       -- 4. resting blood pressure  
+       -- 5. serum cholestoral in mg/dl      
+       -- 6. fasting blood sugar > 120 mg/dl       
+       -- 7. resting electrocardiographic results  (values 0,1,2) 
+       -- 8. maximum heart rate achieved  
+       -- 9. exercise induced angina    
+       -- 10. oldpeak = ST depression induced by exercise relative to rest   
+       -- 11. the slope of the peak exercise ST segment     
+       -- 12. number of major vessels (0-3) colored by flourosopy        
+       -- 13.  thal: 3 = normal; 6 = fixed defect; 7 = reversable defect     
+ 
+ Attributes types
+ -----------------
+ 
+ Real: 1,4,5,8,10,12
+ Ordered:11,
+ Binary: 2,6,9
+ Nominal:7,3,13
+ 
+ Variable to be predicted
+ ------------------------
+ Absence (1) or presence (2) of heart disease
+ 
+ Cost Matrix
+ 
+          abse  pres
+ absence   0     1
+ presence  5     0
+ 
+ where the rows represent the true values and the columns the predicted.
+ 
+ No missing values.
+ 
+ 270 observations
+
+
+
+
+ Relabeled values in attribute class
+    From: 1                       To: absent              
+    From: 2                       To: present
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: ionosphere, Id: 59
+"dataset6_ionosphere_id59.Rda"
+
+
+**Author**: Space Physics Group, Applied Physics Laboratory, Johns Hopkins University. Donated by Vince Sigillito.  
+**Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/ionosphere)  
+**Please cite**: [UCI](https://archive.ics.uci.edu/ml/citation_policy.html) 
+
+**Johns Hopkins University Ionosphere database**  
+This radar data was collected by a system in Goose Bay, Labrador.  This system consists of a phased array of 16 high-frequency antennas with a total transmitted power on the order of 6.4 kilowatts.  See the paper for more details.  
+
+### Attribute information
+Received signals were processed using an autocorrelation function whose arguments are the time of a pulse and the pulse number.  There were 17 pulse numbers for the Goose Bay system.  Instances in this database are described by 2 attributes per pulse number, corresponding to the complex values returned by the function resulting from the complex electromagnetic signal.
+
+The targets were free electrons in the ionosphere.  "Good" (g) radar returns are those showing evidence of some type of structure in the ionosphere.  "Bad" (b) returns are those that do not; their signals pass through the ionosphere.  
+
+### Relevant papers  
+Sigillito, V. G., Wing, S. P., Hutton, L. V., & Baker, K. B. (1989). Classification of radar returns from the ionosphere using neural networks. Johns Hopkins APL Technical Digest, 10, 262-266.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: molecular-biology_promoters, Id: 164
+"dataset7_molecular-biology_promoters_id164.Rda"
+
+
+**Author**: C. Harley, R. Reynolds, M. Noordewier, J. Shavlik.  
+**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/Molecular+Biology+(Promoter+Gene+Sequences)) - 1990  
+**Please cite**: [UCI](https://archive.ics.uci.edu/ml/citation_policy.html)  
+
+**E. coli promoter gene sequences (DNA)**  
+Compilation of promoters with known transcriptional start points for E. coli genes. The task is to recognize promoters in strings that represent nucleotides (one of A, G, T, or C). A promoter is a genetic region which initiates the first step in the expression of an adjacent gene (transcription).  
+
+The input features are 57 sequential DNA nucleotides. Fifty-three sample promoters and 53 nonpromoter sequences were used. The 53 sample promoters were obtained from a compilation
+produced by Hawley and McClure (1983). Negative training examples were thus derived by selecting contiguous substrings from a 1.5 kilobase sequence provided by Prof. T. Record of the Univ. of Wisconsin’s Chemistry Dept. This sequence is a fragment from E. coli bacteriophage T7 isolated with the restriction enzyme HaeIII. By virtue of the fact that the fragment does not bind RNA polymerase, it is believed to not contain any promoter sites.
+
+This dataset has been developed to help evaluate a "hybrid" learning algorithm ("KBANN") that uses examples to inductively refine preexisting knowledge.
+
+### Attribute Description  
+
+* 1. One of {+/-}, indicating the class ("+" = promoter).
+* 2. The instance name (non-promoters named by position in the 1500-long nucleotide sequence provided by T. Record).
+* 3-59. The remaining 57 fields are the sequence, starting at position -50 (p-50) and ending at position +7 (p7). Each of these fields is filled by one of {a, g, t, c}.
+ 
+### Relevant papers  
+
+* Harley, C. and Reynolds, R. 1987. "Analysis of E. Coli Promoter Sequences." Nucleic Acids Research, 15:2343-2361.  
+* Towell, G., Shavlik, J. and Noordewier, M. 1990. "Refinement of Approximate Domain Theories by Knowledge-Based Artificial Neural Networks." In Proceedings of the Eighth National Conference on Artificial Intelligence (AAAI-90).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: Australian, Id: 292
+"dataset8_Australian_id292.Rda"
+
+
+**Author**: Statlog/LibSVM  
+**Source**: Unknown - 2014-11-14  
+**Please cite**:   
+
+This is the famous Australian dataset, retrieved 2014-11-14 from the libSVM site.
+It was normalized.
+
+Source: Statlog / Australian
+# of classes: 2
+# of data: 690
+# of features: 14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: mammography, Id: 310
+"dataset173_mammography_id310.Rda"
+
+
+**Author**:   
+  
+**Source**: Unknown -   
+**Please cite**:   
+
+Mammography dataset
+
+Past Usage:
+1. Woods, K., Doss, C., Bowyer, K., Solka, J., Priebe, C.,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: oil_spill, Id: 311
+"dataset174_oil_spill_id311.Rda"
+
+
+**Author**:   
+  
+**Source**: Unknown -   
+**Please cite**:   
+
+Oil dataset
+
+Past Usage:
+1. Kubat, M., Holte, R.,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: scene, Id: 312
+"dataset209_scene_id312.Rda"
+
+
+**Author**: Matthew R. Boutell, Jiebo Luo, Xipeng Shen, and Christopher M. Brown.  
+**Source**: [Mulan](http://mulan.sourceforge.net/datasets-mlc.html)     
+**Please cite**: 
+
+### Description
+
+Scene recognition dataset - It contains characteristics about images and their classes. 
+The original dataset is a multi-label classification problem with 6 different labels: {Beach, Sunset, FallFoliage, Field, Mountain, Urban}.
+The current dataset is a binary classification problem considering just the 'Urban' label.
+
+### Sources
+
+Matthew R. Boutell, Jiebo Luo, Xipeng Shen, and Christopher M. Brown.
+Learning multi-label scene classification.
+Pattern Recognition, 37(9):1757-1771, 2004. 
+
+### Dataset Information
+
+Multi-label classification problem, based on real-world images.   
+Instances: 2407    
+Features: 294 numerical features with values between [0,1]   
+Classes/Labels: 2 {Urban, Nor Urban}   
+No missing values
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: yeast_ml8, Id: 316
+"dataset210_yeast_ml8_id316.Rda"
+
+
+**Author**:   
+  
+**Source**: Unknown -   
+**Please cite**:   
+
+Yeast dataset
+
+Past Usage:
+André Elisseeff and Jason Weston.
+A kernel method for multi-labelled classification.
+In Thomas G. Dietterich, Susan Becker, and Zoubin Ghahramani, editors, Advances in Neural Information Processing Systems 14, 2002.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: monks-problems-1, Id: 333
+"dataset9_monks-problems-1_id333.Rda"
+
+
+**Author**: Sebastian Thrun (Carnegie Mellon University)  
+**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/MONK's+Problems) - October 1992  
+**Please cite**: [UCI](https://archive.ics.uci.edu/ml/citation_policy.html)   
+
+**The Monk's Problems: Problem 1**  
+Once upon a time, in July 1991, the monks of Corsendonk Priory were faced with a school held in their priory, namely the 2nd European Summer School on Machine Learning. After listening more than one week to a wide variety of learning algorithms, they felt rather confused: Which algorithm would be optimal? And which one to avoid? As a consequence of this dilemma, they created a simple task on which all learning algorithms ought to be compared: the three MONK's problems.
+
+The target concept associated with the 1st Monk's problem is the binary outcome of the logical formula:  
+MONK-1: (a1 == a2) or (a5 == 1)
+
+In this dataset, the original train and test sets were merged to allow other sampling procedures. However, the original train-test splits can be found as one of the OpenML tasks. 
+
+### Attribute information: 
+* attr1: 1, 2, 3 
+* attr2: 1, 2, 3 
+* attr3: 1, 2 
+* attr4: 1, 2, 3 
+* attr5: 1, 2, 3, 4 
+* attr6: 1, 2 
+
+### Relevant papers  
+The MONK's Problems - A Performance Comparison of Different Learning Algorithms, by S.B. Thrun, J. Bala, E. Bloedorn, I. Bratko, B. Cestnik, J. Cheng, K. De Jong, S. Dzeroski, S.E. Fahlman, D. Fisher, R. Hamann, K. Kaufman, S. Keller, I. Kononenko, J. Kreuziger, R.S. Michalski, T. Mitchell, P. Pachowicz, Y. Reich H. Vafaie, W. Van de Welde, W. Wenzel, J. Wnek, and J. Zhang. Technical Report CS-CMU-91-197, Carnegie Mellon University, Dec. 1991.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: SPECTF, Id: 337
+"dataset13_SPECTF_id337.Rda"
+
+
+**Author**: Krzysztof J. Cios","Lukasz A.  
+**Source**: [original](https://archive.ics.uci.edu/ml/datasets/SPECTF+Heart) -   
+**Please cite**:   
+
+SPECTF heart data
+
+This is a merged version of the separate train and test set which are usually distributed. On OpenML this train-test split can be found as one of the possible tasks.  
+
+NOTE: See the SPECT heart data for binary data for the same classification task.
+
+Sources: 
+-- Original owners: Krzysztof J. Cios, Lukasz A. Kurgan University of Colorado at Denver, Denver, CO 80217, U.S.A. Krys.Cios@cudenver.edu Lucy S. Goodenday Medical College of Ohio, OH, U.S.A. 
+-- Donors: Lukasz A.Kurgan, Krzysztof J. Cios 
+-- Date: 10/01/01  
+
+Relevant Information: The dataset describes diagnosing of cardiac Single Proton Emission Computed Tomography (SPECT) images. Each of the patients is classified into two categories: normal and abnormal. The database of 267 SPECT image sets (patients) was processed to extract features that summarize the original SPECT images. As a result, 44 continuous feature pattern was created for each patient. The CLIP3 algorithm was used to generate classification rules from these patterns. The CLIP3 algorithm generated rules that were 77.0% accurate (as compared with cardiologists' diagnoses).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: aids, Id: 346
+"dataset14_aids_id346.Rda"
+
+
+**Author**: Jeffrey S. Simonoff  
+**Source**: [original](http://www.stern.nyu.edu/~jsimonof/AnalCatData) -   
+**Please cite**: Jeffrey S. Simonoff. Analyzing Categorical Data, Springer-Verlag, New York, 2003  
+
+Data originating from the book "Analyzing Categorical Data" by Jeffrey S. Simonoff.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: webdata_wXa, Id: 350
+"dataset238_webdata_wXa_id350.Rda"
+
+
+**Author**: John Platt  
+**Source**: [libSVM](http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets) - Date unknown  
+**Please cite**:   John C. Platt. 
+Fast training of support vector machines using sequential minimal optimization. 
+In Bernhard Schölkopf, Christopher J. C. Burges, and Alexander J. Smola, editors, Advances in Kernel Methods - Support Vector Learning, Cambridge, MA, 1998. MIT Press.a
+
+This is the famous webdata dataset w[1-8]a in its binary version, retrieved 2014-11-14 from the libSVM site. Additional to the preprocessing done there (see LibSVM site for details), this dataset was created as follows: 
+
+* load all web data  datasets, train and test, e.g. w1a, w1a.t, w2a, w2a.t, w3a, ... 
+* join test and train for each subset, e.g. w1a and w1a.t, w2a and w2a.t 
+* normalize each file columnwise according to the following rules: 
+* If a column only contains one value (constant feature), it will set to zero and thus removed by sparsity. 
+* If a column contains two values (binary feature), the value occuring more often will be set to zero, the other to one. 
+* If a column contains more than two values (multinary/real feature), the column is divided by its std deviation.
+* afterwards all these 8 files are merged into one, and randomly sorted. 
+* duplicate lines were finally removed.
+
+An R script which does all of these steps can be found here:
+https://github.com/openml/data_scripts/blob/master/webdata_wXa/dataDownloader.R
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: vehicle_sensIT, Id: 357
+"dataset239_vehicle_sensIT_id357.Rda"
+
+
+**Author**: M. Duarte, Y. H. Hu  
+**Source**: [original](http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets) - 2013-11-14 -   
+**Please cite**:   M. Duarte and Y. H. Hu. 
+Vehicle classification in distributed sensor networks. 
+Journal of Parallel and Distributed Computing, 64(7):826-838, July 2004.
+
+
+This is the SensIT Vehicle (combined)  dataset, retrieved 2013-11-14 from the libSVM site. Additional to the preprocessing done there (see LibSVM site for details), this dataset was created as follows: 
+-join test and train datasets (2 files, already pre-combined)
+-relabel classes 1,2=positive class and 3=negative class
+-normalize each file columnwise according to the following rules: 
+-If a column only contains one value (constant feature), it will set to zero and thus removed by sparsity. 
+-If a column contains two values (binary feature), the value occuring more often will be set to zero, the other to one. -If a column contains more than two values (multinary/real feature), the column is divided by its std deviation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_boxing2, Id: 444
+"dataset15_analcatdata_boxing2_id444.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+analcatdata    A collection of data sets used in the book "Analyzing Categorical Data,"
+by Jeffrey S. Simonoff, Springer-Verlag, New York, 2003. The submission
+consists of a zip file containing two versions of each of 84 data sets,
+plus this README file. Each data set is given in comma-delimited ASCII
+(.csv) form, and Microsoft Excel (.xls) form.
+
+NOTICE: These data sets may be used freely for scientific, educational and/or
+noncommercial purposes, provided suitable acknowledgment is given (by citing
+the above-named reference).
+
+Further details concerning the book, including information on statistical software
+(including sample S-PLUS/R and SAS code), are available at the web site
+
+http://www.stern.nyu.edu/~jsimonof/AnalCatData
+
+
+Information about the dataset
+CLASSTYPE: nominal
+CLASSINDEX: last
+
+
+Note: Quotes, Single-Quotes and Backslashes were removed, Blanks replaced
+with Underscores
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: prnn_crabs, Id: 446
+"dataset16_prnn_crabs_id446.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Datasets for `Pattern Recognition and Neural Networks' by B.D. Ripley
+=====================================================================
+
+Cambridge University Press (1996)  ISBN  0-521-46086-7
+
+The background to the datasets is described in section 1.4; this file
+relates the computer-readable files to that description.
+
+
+
+Cushing's syndrome
+------------------
+
+Data from Aitchison & Dunsmore (1975, Tables 11.1-3).
+
+Data file Cushings.dat has four columns,
+
+Label of the patient
+Tetrhydrocortisone  (mg/24hr)
+Pregnanetriol  (mg/24hr)
+Type
+
+The type of the last six patients (u1 to u6) should be
+regarded as unknown.  (The code `o' indicates `other').
+
+
+
+synthetic two-class problem
+---------------------------
+
+Data from Ripley (1994a).
+
+This has two real-valued co-ordinates (xs and ys) and a class (xc)
+which is 0 or 1.
+
+Data file  synth.tr   has 250 rows of the training set
+synth.te   has 1000 rows of the test set  (not used here)
+
+
+
+viruses
+-------
+
+This is a dataset on 61 viruses with rod-shaped particles affecting
+various crops (tobacco, tomato, cucumber and others) described by
+{Fauquet et al. (1988) and analysed by Eslava-G\'omez (1989).  There
+are 18 measurements on each virus,  the number of amino acid residues
+per molecule of coat protein.
+
+Data file  viruses.dat  has 61 rows of 18 counts
+virus3.dat   has 38 rows corresponding to the distinct
+Tobamoviruses.
+
+The whole dataset is in order Hordeviruses (3), Tobraviruses (6),
+Tobamoviruses (39) and `furoviruses' (13).
+
+
+
+Leptograpsus crabs
+------------------
+
+Data from Campbell & Mahon (1974) on the morphology of rock crabs of
+genus Leptograpsus.
+
+There are 50 specimens of each sex of each of two colour forms.
+
+Data file  crabs.dat has rows
+
+sp	`species', coded B (blue form) or O (orange form)
+sex	coded M or F
+index	within each group of 50
+FL	frontal lip of carapace (mm)
+RW	rear width of carapace (mm)
+CL	length along the midline of carapace (mm)
+CW	maximum width of carapace (mm)
+BD	body depth (mm)
+
+
+
+Forensic glass
+--------------
+
+This example comes from forensic testing of glass collected by
+B. German on 214 fragments of glass.  It is also contained in the
+UCI machine-learning database collection (Murphy & Aha, 1995).
+
+Data file fglass.dat has 214 rows with data for a single glass
+fragment.
+
+RI	refractive index
+Na	% weight of sodium oxide(s)
+Mg	% weight of magnesium oxide(s)
+Al	% weight of aluminium oxide(s)
+Si	% weight of silicon oxide(s)
+K	% weight of potassium oxide(s)
+Ca	% weight of calcium oxide(s)
+Ba	% weight of barium oxide(s)
+Fe	% weight of iron oxide(s)
+type	coded 1 to 7
+
+The type codes are:
+
+1 (WinF) window float glass
+2 (WinNF) window non-float glass
+3 (Veh) vehicle glass
+5 (Con)  containers
+6 (Tabl) tableware
+7 (Head) vehicle headlamp glass
+
+The ten groups used for the cross-validation experiments (I believe)
+are listed as row numbers in the file fglass.grp,
+
+
+
+Diabetes in Pima Indians
+------------------------
+
+A population of women who were at least 21 years old, of Pima Indian heritage
+and living near Phoenix, Arizona,  was tested for diabetes
+according to World Health Organization criteria.  The data
+were collected by the US National Institute of Diabetes and Digestive and
+Kidney Diseases (Smith et al, 1988). This example is also contained in the
+UCI machine-learning database collection (Murphy & Aha, 1995).
+
+The data files have rows containing
+
+npreg 	number of pregnancies
+glu 	plasma glucose concentration in an oral glucose tolerance test
+bp 	diastolic blood pressure (mm Hg)
+skin 	triceps skin fold thickness (mm)
+ins	serum insulin (micro U/ml)
+bmi 	body mass index (weight in kg/(height in m)^2)
+ped 	diabetes pedigree function
+age 	in years
+type	No / Yes
+
+Data file pima.tr   has 200 rows of complete training data.
+pima.te   has 332 rows of complete test data.
+pima.tr2  has the 200 rows of pima.tr plus 100 incomplete rows.
+
+
+
+Information about the dataset
+CLASSTYPE: nominal
+CLASSINDEX: 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_lawsuit, Id: 450
+"dataset18_analcatdata_lawsuit_id450.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+analcatdata    A collection of data sets used in the book "Analyzing Categorical Data,"
+by Jeffrey S. Simonoff, Springer-Verlag, New York, 2003. The submission
+consists of a zip file containing two versions of each of 84 data sets,
+plus this README file. Each data set is given in comma-delimited ASCII
+(.csv) form, and Microsoft Excel (.xls) form.
+
+NOTICE: These data sets may be used freely for scientific, educational and/or
+noncommercial purposes, provided suitable acknowledgment is given (by citing
+the above-named reference).
+
+Further details concerning the book, including information on statistical software
+(including sample S-PLUS/R and SAS code), are available at the web site
+
+http://www.stern.nyu.edu/~jsimonof/AnalCatData
+
+
+Information about the dataset
+CLASSTYPE: nominal
+CLASSINDEX: last
+
+
+Note: Quotes, Single-Quotes and Backslashes were removed, Blanks replaced
+with Underscores
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_asbestos, Id: 459
+"dataset19_analcatdata_asbestos_id459.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+analcatdata    A collection of data sets used in the book "Analyzing Categorical Data,"
+by Jeffrey S. Simonoff, Springer-Verlag, New York, 2003. The submission
+consists of a zip file containing two versions of each of 84 data sets,
+plus this README file. Each data set is given in comma-delimited ASCII
+(.csv) form, and Microsoft Excel (.xls) form.
+
+NOTICE: These data sets may be used freely for scientific, educational and/or
+noncommercial purposes, provided suitable acknowledgment is given (by citing
+the above-named reference).
+
+Further details concerning the book, including information on statistical software
+(including sample S-PLUS/R and SAS code), are available at the web site
+
+http://www.stern.nyu.edu/~jsimonof/AnalCatData
+
+
+Information about the dataset
+CLASSTYPE: nominal
+CLASSINDEX: 1
+
+
+Note: Quotes, Single-Quotes and Backslashes were removed, Blanks replaced
+with Underscores
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_japansolvent, Id: 467
+"dataset20_analcatdata_japansolvent_id467.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+analcatdata    A collection of data sets used in the book "Analyzing Categorical Data,"
+by Jeffrey S. Simonoff, Springer-Verlag, New York, 2003. The submission
+consists of a zip file containing two versions of each of 84 data sets,
+plus this README file. Each data set is given in comma-delimited ASCII
+(.csv) form, and Microsoft Excel (.xls) form.
+
+NOTICE: These data sets may be used freely for scientific, educational and/or
+noncommercial purposes, provided suitable acknowledgment is given (by citing
+the above-named reference).
+
+Further details concerning the book, including information on statistical software
+(including sample S-PLUS/R and SAS code), are available at the web site
+
+http://www.stern.nyu.edu/~jsimonof/AnalCatData
+
+
+Information about the dataset
+CLASSTYPE: nominal
+CLASSINDEX: 2
+
+
+Note: Quotes, Single-Quotes and Backslashes were removed, Blanks replaced
+with Underscores
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: lupus, Id: 472
+"dataset21_lupus_id472.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+87 persons with lupus nephritis. Followed up 15+ years. 35 deaths. Var =
+duration of disease. Over 40 baseline variables avaiable from authors.
+Description :
+For description of this data set arising from 87 persons
+with lupus nephritis followed for 15+ years after an initial
+renal biopsy (the starting point of follow-up) see the introduction to
+Abrahamowicz, MacKenzie and Esdaile (December 1996 issue).
+This data set only contains time to death/censoring, indicator,
+duration and log(1+duration), where duration is the duration
+of untreated  disease prior to biopsy. This variable was the
+focus in the aforementioned JASA article because it clearly
+violates the proportionality of hazards assumption. More than
+40 other variables acquired at baseline are available from
+authors.
+Permission :
+This data can be freely used for non-commercial purposes and
+distributed freely.
+Michal Abrahamowicz, Todd MacKenzie and John Esdaile
+
+
+Information about the dataset
+CLASSTYPE: nominal
+CLASSINDEX: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_bankruptcy, Id: 476
+"dataset22_analcatdata_bankruptcy_id476.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+analcatdata    A collection of data sets used in the book "Analyzing Categorical Data,"
+by Jeffrey S. Simonoff, Springer-Verlag, New York, 2003. The submission
+consists of a zip file containing two versions of each of 84 data sets,
+plus this README file. Each data set is given in comma-delimited ASCII
+(.csv) form, and Microsoft Excel (.xls) form.
+
+NOTICE: These data sets may be used freely for scientific, educational and/or
+noncommercial purposes, provided suitable acknowledgment is given (by citing
+the above-named reference).
+
+Further details concerning the book, including information on statistical software
+(including sample S-PLUS/R and SAS code), are available at the web site
+
+http://www.stern.nyu.edu/~jsimonof/AnalCatData
+
+
+Information about the dataset
+CLASSTYPE: nominal
+CLASSINDEX: last
+
+
+Note: Quotes, Single-Quotes and Backslashes were removed, Blanks replaced
+with Underscores
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_cyyoung9302, Id: 479
+"dataset23_analcatdata_cyyoung9302_id479.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+analcatdata    A collection of data sets used in the book "Analyzing Categorical Data,"
+by Jeffrey S. Simonoff, Springer-Verlag, New York, 2003. The submission
+consists of a zip file containing two versions of each of 84 data sets,
+plus this README file. Each data set is given in comma-delimited ASCII
+(.csv) form, and Microsoft Excel (.xls) form.
+
+NOTICE: These data sets may be used freely for scientific, educational and/or
+noncommercial purposes, provided suitable acknowledgment is given (by citing
+the above-named reference).
+
+Further details concerning the book, including information on statistical software
+(including sample S-PLUS/R and SAS code), are available at the web site
+
+http://www.stern.nyu.edu/~jsimonof/AnalCatData
+
+
+Information about the dataset
+CLASSTYPE: nominal
+CLASSINDEX: last
+
+
+Note: Quotes, Single-Quotes and Backslashes were removed, Blanks replaced
+with Underscores
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: sleuth_ex2016, Id: 682
+"dataset24_sleuth_ex2016_id682.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Contains 110 data sets from the book 'The Statistical Sleuth'
+by Fred Ramsey and Dan Schafer; Duxbury Press, 1997.
+(schafer@stat.orst.edu) [14/Oct/97] (172k)
+
+Note: description taken from this web site:
+http://lib.stat.cmu.edu/datasets/
+
+File: ../data/sleuth/ex2016.asc
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: none specific
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: sleuth_ex2015, Id: 683
+"dataset25_sleuth_ex2015_id683.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Contains 110 data sets from the book 'The Statistical Sleuth'
+by Fred Ramsey and Dan Schafer; Duxbury Press, 1997.
+(schafer@stat.orst.edu) [14/Oct/97] (172k)
+
+Note: description taken from this web site:
+http://lib.stat.cmu.edu/datasets/
+
+File: ../data/sleuth/ex2015.asc
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: none specific
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: fruitfly, Id: 714
+"dataset27_fruitfly_id714.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: rmftsa_ladata, Id: 717
+"dataset28_rmftsa_ladata_id717.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: veteran, Id: 719
+"dataset29_veteran_id719.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: abalone, Id: 720
+"dataset175_abalone_id720.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: pwLinear, Id: 721
+"dataset30_pwLinear_id721.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: pol, Id: 722
+"dataset211_pol_id722.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_vineyard, Id: 724
+"dataset31_analcatdata_vineyard_id724.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: bank8FM, Id: 725
+"dataset176_bank8FM_id725.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_supreme, Id: 728
+"dataset177_analcatdata_supreme_id728.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: visualizing_slope, Id: 729
+"dataset32_visualizing_slope_id729.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: baskball, Id: 731
+"dataset33_baskball_id731.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: machine_cpu, Id: 733
+"dataset34_machine_cpu_id733.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: ailerons, Id: 734
+"dataset212_ailerons_id734.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: visualizing_environmental, Id: 736
+"dataset35_visualizing_environmental_id736.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: space_ga, Id: 737
+"dataset178_space_ga_id737.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: rmftsa_sleepdata, Id: 741
+"dataset36_rmftsa_sleepdata_id741.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: auto_price, Id: 745
+"dataset37_auto_price_id745.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: servo, Id: 747
+"dataset38_servo_id747.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_wildcat, Id: 748
+"dataset39_analcatdata_wildcat_id748.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: pm10, Id: 750
+"dataset40_pm10_id750.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: wisconsin, Id: 753
+"dataset41_wisconsin_id753.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: sleuth_ex1605, Id: 755
+"dataset42_sleuth_ex1605_id755.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_election2000, Id: 758
+"dataset43_analcatdata_election2000_id758.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_olympic2000, Id: 759
+"dataset44_analcatdata_olympic2000_id759.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: cpu_act, Id: 761
+"dataset214_cpu_act_id761.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_apnea1, Id: 767
+"dataset47_analcatdata_apnea1_id767.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: strikes, Id: 770
+"dataset48_strikes_id770.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_michiganacc, Id: 771
+"dataset49_analcatdata_michiganacc_id771.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: quake, Id: 772
+"dataset50_quake_id772.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: disclosure_x_bias, Id: 774
+"dataset51_disclosure_x_bias_id774.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: sleuth_ex1714, Id: 777
+"dataset52_sleuth_ex1714_id777.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: bodyfat, Id: 778
+"dataset53_bodyfat_id778.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: rabe_265, Id: 780
+"dataset54_rabe_265_id780.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: rabe_266, Id: 782
+"dataset55_rabe_266_id782.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: newton_hema, Id: 784
+"dataset56_newton_hema_id784.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: witmer_census_1980, Id: 787
+"dataset57_witmer_census_1980_id787.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: triazines, Id: 788
+"dataset58_triazines_id788.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: elusage, Id: 790
+"dataset59_elusage_id790.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: diabetes_numeric, Id: 791
+"dataset60_diabetes_numeric_id791.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: pyrim, Id: 800
+"dataset62_pyrim_id800.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: chscase_funds, Id: 801
+"dataset63_chscase_funds_id801.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: delta_ailerons, Id: 803
+"dataset179_delta_ailerons_id803.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: hutsof99_logis, Id: 804
+"dataset64_hutsof99_logis_id804.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: kin8nm, Id: 807
+"dataset180_kin8nm_id807.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: rmftsa_ctoarrivals, Id: 811
+"dataset65_rmftsa_ctoarrivals_id811.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: chscase_vine2, Id: 814
+"dataset66_chscase_vine2_id814.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: chscase_vine1, Id: 815
+"dataset67_chscase_vine1_id815.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: puma8NH, Id: 816
+"dataset181_puma8NH_id816.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: diggle_table_a1, Id: 817
+"dataset68_diggle_table_a1_id817.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: diggle_table_a2, Id: 818
+"dataset69_diggle_table_a2_id818.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: delta_elevators, Id: 819
+"dataset182_delta_elevators_id819.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: chatfield_4, Id: 820
+"dataset70_chatfield_4_id820.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: house_16H, Id: 821
+"dataset215_house_16H_id821.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: houses, Id: 823
+"dataset216_houses_id823.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: sensory, Id: 826
+"dataset71_sensory_id826.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_vehicle, Id: 835
+"dataset73_analcatdata_vehicle_id835.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: stock, Id: 841
+"dataset74_stock_id841.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: elevators, Id: 846
+"dataset218_elevators_id846.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: wind, Id: 847
+"dataset183_wind_id847.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: schlvote, Id: 848
+"dataset75_schlvote_id848.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: tecator, Id: 851
+"dataset184_tecator_id851.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: boston, Id: 853
+"dataset76_boston_id853.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: bolts, Id: 857
+"dataset77_bolts_id857.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+SUMMARY:
+
+Data from an experiment on the affects of machine adjustments on
+the time to count bolts.  Data appear as the STATS (Issue 10) Challenge.
+
+DATA:
+
+Submitted by W. Robert Stephenson, Iowa State University
+email: wrstephe@iastate.edu
+
+A manufacturer of automotive accessories provides hardware, e.g. nuts,
+bolts, washers and screws, to fasten the accessory to the car or truck.
+Hardware is counted and packaged automatically.  Specifically, bolts
+are dumped into a large metal dish.  A plate that forms the bottom of
+the dish rotates counterclockwise.  This rotation forces bolts to the
+outside of the dish and up along a narrow ledge.  Due to the vibration
+of the dish caused by the spinning bottom plate, some bolts fall off
+the ledge and back into the dish.  The ledge spirals up to a point
+where the bolts are allowed to drop into a pan on a conveyor belt.
+As a bolt drops, it passes by an electronic eye that counts it.  When
+the electronic counter reaches the preset number of bolts, the
+rotation is stopped and the conveyor belt is moved forward.
+
+There are several adjustments on the machine that affect its operation.
+These include; a speed setting that controls the speed of rotation
+(SPEED1) of the plate at the bottom of the dish, a total number of
+bolts (TOTAL) to be counted, a second speed setting (SPEED2) that is
+used to change the speed of rotation (usually slowing it down) for the
+last few bolts, the number of bolts to be counted at this second speed
+(NUMBER2), and the sensitivity of the electronic eye (SENS).  The
+sensitivity setting is to insure that the correct number of bolts are
+counted.  Too few bolts packaged causes customer complaints.  Too many
+bolts packaged increases costs.  For each run conducted in this
+experiment the correct number of bolts was counted.  From an
+engineering standpoint if the correct number of bolts is counted, the
+sensitivity should not affect the time to count bolts.  The measured
+response is the time (TIME), in seconds, it takes to count the desired
+number of bolts.  In order to put times on a equal footing the
+response to be analyzed is the time to count 20 bolts (T20BOLT).
+Below are the data for 40 combinations of settings.  RUN is the order
+in which the data were collected.
+
+Analyze the data.  What adjustments have the greatest effect on the
+time to count 20 bolts?  How would you adjust the machine to get
+the shortest time to count 20 bolts?  Are there any unusual features
+to the data?
+
+Data
+
+RUN   SPEED1   TOTAL   SPEED2   NUMBER2   SENS   TIME   T20BOLT
+
+
+The data description and data may be freely used for non-commercial
+purposes and can be freely distributed.  Copyright remains with the
+author and STATS Magazine.
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: last
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_gviolence, Id: 859
+"dataset78_analcatdata_gviolence_id859.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: vinnie, Id: 860
+"dataset79_vinnie_id860.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: rabe_131, Id: 874
+"dataset81_rabe_131_id874.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_chlamydia, Id: 875
+"dataset82_analcatdata_chlamydia_id875.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: mu284, Id: 880
+"dataset83_mu284_id880.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: pollution, Id: 882
+"dataset84_pollution_id882.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: transplant, Id: 885
+"dataset85_transplant_id885.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: no2, Id: 886
+"dataset86_no2_id886.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: mbagrade, Id: 887
+"dataset87_mbagrade_id887.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: cloud, Id: 890
+"dataset88_cloud_id890.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: sleuth_case1201, Id: 892
+"dataset89_sleuth_case1201_id892.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: visualizing_hamster, Id: 893
+"dataset90_visualizing_hamster_id893.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: rabe_148, Id: 894
+"dataset91_rabe_148_id894.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: chscase_geyser1, Id: 895
+"dataset92_chscase_geyser1_id895.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: sleuth_case2002, Id: 902
+"dataset94_sleuth_case2002_id902.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: chscase_adopt, Id: 905
+"dataset95_chscase_adopt_id905.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: chscase_census5, Id: 906
+"dataset96_chscase_census5_id906.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: balloon, Id: 914
+"dataset100_balloon_id914.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: plasma_retinol, Id: 915
+"dataset101_plasma_retinol_id915.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: rabe_166, Id: 919
+"dataset102_rabe_166_id919.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_seropositive, Id: 921
+"dataset103_analcatdata_seropositive_id921.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: visualizing_soil, Id: 923
+"dataset185_visualizing_soil_id923.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: humandevel, Id: 924
+"dataset104_humandevel_id924.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: visualizing_galaxy, Id: 925
+"dataset105_visualizing_galaxy_id925.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: hutsof99_child_witness, Id: 927
+"dataset106_hutsof99_child_witness_id927.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: rabe_176, Id: 929
+"dataset108_rabe_176_id929.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: socmob, Id: 934
+"dataset110_socmob_id934.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: kidney, Id: 945
+"dataset111_kidney_id945.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: visualizing_ethanol, Id: 946
+"dataset112_visualizing_ethanol_id946.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: arsenic-female-bladder, Id: 949
+"dataset114_arsenic-female-bladder_id949.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: spectrometer, Id: 954
+"dataset186_spectrometer_id954.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: tae, Id: 955
+"dataset117_tae_id955.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: segment, Id: 958
+"dataset187_segment_id958.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: nursery, Id: 959
+"dataset219_nursery_id959.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: mfeat-morphological, Id: 962
+"dataset118_mfeat-morphological_id962.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: pasture, Id: 964
+"dataset119_pasture_id964.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: zoo, Id: 965
+"dataset120_zoo_id965.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: iris, Id: 969
+"dataset121_iris_id969.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_authorship, Id: 970
+"dataset188_analcatdata_authorship_id970.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: mfeat-fourier, Id: 971
+"dataset220_mfeat-fourier_id971.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: wine, Id: 973
+"dataset122_wine_id973.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: hayes-roth, Id: 974
+"dataset123_hayes-roth_id974.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: JapaneseVowels, Id: 976
+"dataset221_JapaneseVowels_id976.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: letter, Id: 977
+"dataset222_letter_id977.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: mfeat-factors, Id: 978
+"dataset223_mfeat-factors_id978.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: optdigits, Id: 980
+"dataset224_optdigits_id980.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: cmc, Id: 983
+"dataset124_cmc_id983.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: collins, Id: 987
+"dataset125_collins_id987.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: fl2000, Id: 988
+"dataset126_fl2000_id988.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: car, Id: 991
+"dataset127_car_id991.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: vehicle, Id: 994
+"dataset128_vehicle_id994.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: mfeat-zernike, Id: 995
+"dataset189_mfeat-zernike_id995.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: balance-scale, Id: 997
+"dataset129_balance-scale_id997.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: glass, Id: 1005
+"dataset130_glass_id1005.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: white-clover, Id: 1009
+"dataset131_white-clover_id1009.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: ecoli, Id: 1011
+"dataset132_ecoli_id1011.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_challenger, Id: 1013
+"dataset133_analcatdata_challenger_id1013.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_dmft, Id: 1014
+"dataset134_analcatdata_dmft_id1014.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: confidence, Id: 1015
+"dataset135_confidence_id1015.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: vowel, Id: 1016
+"dataset136_vowel_id1016.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: pendigits, Id: 1019
+"dataset225_pendigits_id1019.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: mfeat-karhunen, Id: 1020
+"dataset226_mfeat-karhunen_id1020.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: page-blocks, Id: 1021
+"dataset190_page-blocks_id1021.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: mfeat-pixel, Id: 1022
+"dataset227_mfeat-pixel_id1022.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: analcatdata_germangss, Id: 1025
+"dataset137_analcatdata_germangss_id1025.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: sylva_agnostic, Id: 1036
+"dataset240_sylva_agnostic_id1036.Rda"
+
+
+**Author**: [Isabelle Guyon](isabelle@clopinet.com)  
+**Source**: [Agnostic Learning vs. Prior Knowledge Challenge](http://www.agnostic.inf.ethz.ch)  
+**Please cite**: None
+
+
+Dataset from the Agnostic Learning vs. Prior Knowledge Challenge (http://www.agnostic.inf.ethz.ch), which consisted of 5 different datasets (SYLVA, GINA, NOVA, HIVA, ADA). The purpose of the challenge was to check if the performance of domain-specific feature engineering (prior knowledge) can be met by algorithms that were trained on data without any domain-specific knowledge (agnostic). For the latter, the data was anonymised and preprocessed in a way that makes them uninterpretable. 
+
+This dataset contains the agnostic (smashed) version of a data set from the Remote Sensing and GIS Program of Colorado State University for the time span June 2005 - September 2006. A Similar, raw and not-agnostic data set is termed __Covertype Dataset__ and can be found in the [UCI Database](https://archive.ics.uci.edu/ml/datasets/covertype).
+
+Modified by TunedIT (converted to ARFF format)
+
+
+
+### Topic
+
+The task of SYLVA is to classify forest cover types. The forest cover type for 30 x 30
+meter cells is obtained from US Forest Service (USFS) Region 2 Resource Information
+System &#40;RIS&#41; data. We brought it back to a two-class classification problem (classifying
+Ponderosa pine vs. everything else). The “agnostic data” consists in 216 input variables.
+Each pattern is composed of 4 records: 2 true records matching the target and 2 records
+picked at random. Thus ½ of the features are distracters. The “prior knowledge data” is
+identical to the “agnostic data”, except that the distracters are removed and the identity of
+the features is revealed.
+
+### Description 
+
+Data type: non-sparse
+Number of features: 216
+Number of examples and check-sums:
+Pos_ex Neg_ex Tot_ex Check_sum
+Train   805 12281 13086 238271607.00
+Valid    81  1228  1309 23817234.00
+
+
+This dataset contains samples from both training and validation datasets.
+
+### Source
+
+Original owners: 
+Remote Sensing and GIS Program
+Department of Forest Sciences
+College of Natural Resources
+Colorado State University
+Fort Collins, CO 80523
+(contact Jock A. Blackard, jblackard/wo_ftcol@fs.fed.us
+or Dr. Denis J. Dean, denis@cnr.colostate.edu)
+Jock A. Blackard
+USDA Forest Service
+3825 E. Mulberry
+Fort Collins, CO 80524 USA
+jblackard/wo_ftcol@fs.fed.us
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: gina_agnostic, Id: 1038
+"dataset241_gina_agnostic_id1038.Rda"
+
+
+**Author**: [Isabelle Guyon](isabelle@clopinet.com)  
+**Source**: [Agnostic Learning vs. Prior Knowledge Challenge](http://www.agnostic.inf.ethz.ch)  
+**Please cite**: None
+
+
+Dataset from the Agnostic Learning vs. Prior Knowledge Challenge (http://www.agnostic.inf.ethz.ch), which consisted of 5 different datasets (SYLVA, GINA, NOVA, HIVA, ADA). The purpose of the challenge was to check if the performance of domain-specific feature engineering (prior knowledge) can be met by algorithms that were trained on data without any domain-specific knowledge (agnostic). For the latter, the data was anonymised and preprocessed in a way that makes them uninterpretable. 
+
+Modified by TunedIT (converted to ARFF format)
+
+
+
+### Topic
+
+The task of GINA is handwritten digit recognition. This is the agnostic version of a subset of the MNIST data set. We chose the problem of separating the odd numbers from even numbers. We use 2-digit numbers. Only the unit digit is informative for that task, therefore at least ½ of the features are distracters. This is a twoclass classification problem with sparse continuous input variables, in which each class is
+composed of several clusters. It is a problems with heterogeneous classes.
+
+
+### Source
+
+The data set was constructed from the MNIST data that is made available by Yann
+LeCun of the NEC Research Institute at [http://yann.lecun.com/exdb/mnist/](http://yann.lecun.com/exdb/mnist/). The digits have been size-normalized and centered in a fixed-size image of dimension 28x28. Examples are shown in the [documentation in chapter 3](http://clopinet.com/isabelle/Projects/agnostic/Dataset.pdf).
+
+
+### Description 
+
+To construct the “agnostic” dataset, we performed the following steps:
+- We removed the pixels that were 99% of the time white. This reduced the original
+feature set of 784 pixels to 485.
+- The original resolution (256 gray levels) was kept.
+- In spite of the fact that the data are rather sparse (about 30% of the values are
+non-zero), we saved the data as a dense matrix because we found that it can be
+compressed better in this way (to 19 MB.)
+- The feature names are the (i,j) matrix coordinates of the pixels (in a 28x28
+matrix.)
+- We created 2 digit numbers by dividing the datasets into to parts and pairing the
+digits at random.
+- The task is to separate odd from even numbers. The digit of the tens being not
+informative, the features of that digit act as distracters.
+To construct the “prior” dataset, we went back to the original data and fetched the
+“informative” digit in its original representation. Therefore, this data representation
+consists in a vector of concatenating the lines of a 28x28 pixel map.
+
+Data type: non-sparse  
+Number of features: 970  
+Number of examples and check-sums:  
+Pos_ex Neg_ex Tot_ex Check_sum  
+Train  1550  1603  3153 164947945.00  
+Valid   155   160   315 16688946.00  
+
+
+This dataset contains samples from both training and validation datasets.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: hiva_agnostic, Id: 1039
+"dataset242_hiva_agnostic_id1039.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Datasets from the Agnostic Learning vs. Prior Knowledge Challenge (http://www.agnostic.inf.ethz.ch)
+
+Dataset from: http://www.agnostic.inf.ethz.ch/datasets.php
+
+Modified by TunedIT (converted to ARFF format)
+
+
+HIVA is the HIV infection database
+
+
+The task of HIVA is to predict which compounds are active against the AIDS HIV infection. The original data has 3 classes (active, moderately active, and inactive). We brought it back to a two-class classification problem (active vs. inactive). We represented the data as 2000 sparse binary input variables. The variables represent properties of the molecule inferred from its structure. The problem is therefore to relate structure to activity (a QSAR=quantitative structure-activity relationship problem) to screen new compounds before actually testing them (a HTS=high-throughput screening problem.)
+
+Data type: non-sparse
+Number of features: 1617
+Number of examples and check-sum:
+Pos_ex	Neg_ex	Tot_ex	Check_sum
+Train	  135	 3710	 3845	564954.00
+Valid	   14	  370	  384	56056.00
+
+
+This dataset contains samples from both training and validation datasets.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: ada_agnostic, Id: 1043
+"dataset230_ada_agnostic_id1043.Rda"
+
+
+**Author**: [Isabelle Guyon](isabelle@clopinet.com)  
+**Source**: [Agnostic Learning vs. Prior Knowledge Challenge](http://www.agnostic.inf.ethz.ch)  
+**Please cite**: None
+
+
+Dataset from the Agnostic Learning vs. Prior Knowledge Challenge (http://www.agnostic.inf.ethz.ch), which consisted of 5 different datasets (SYLVA, GINA, NOVA, HIVA, ADA). The purpose of the challenge was to check if the performance of domain-specific feature engineering (prior knowledge) can be met by algorithms that were trained on data without any domain-specific knowledge (agnostic). For the latter, the data was anonymised and preprocessed in a way that makes them uninterpretable. 
+
+This dataset contains the agnostic (smashed) version of a data set from the US census bureau for the time span June 2005 - September 2006. Similar data set on OpenML is called __adult__. The raw data from the census bureau is also known as the Adult database in the UCI machine-learning repository. 
+
+### Topic
+
+The task of ADA is to discover high revenue people from census data. This is a two-class
+classification problem. The raw data from the census bureau is known as the Adult
+database in the UCI machine-learning repository. It contains continuous, binary and
+categorical variables. The “prior knowledge track” has access to the original features and
+their identity. The agnostic track has access to a preprocessed numeric representation
+eliminating categorical variables. 
+
+### Source
+
+Original owners
+This data was extracted from the census bureau database found at
+http://www.census.gov/ftp/pub/DES/www/welcome.html
+Donor: Ronny Kohavi and Barry Becker,
+ Data Mining and Visualization
+ Silicon Graphics.
+ e-mail: ronnyk@sgi.com for questions
+
+Dataset from: http://www.agnostic.inf.ethz.ch/datasets.php
+
+### Preprocessing
+
+In [this documentation](http://clopinet.com/isabelle/Projects/agnostic/Dataset.pdf) the organisers of the challenge describe the steps they performed to come up with the __agnostic__ data. The 14 original attributes (features) include age, workclass,  education,
+marital status, occupation, native country, etc. It contains continuous, binary and categorical features. This dataset is from the "agnostic learning track", i.e. has access to a preprocessed numeric representation eliminating categorical variables, but the identity of the features is not revealed.
+
+### Additional Info
+
+This dataset contains samples from both training and validation datasets. Modified by TunedIT (converted to ARFF format).
+
+Data type: non-sparse
+Number of features: 48
+Number of examples and check-sums:
+Pos_ex Neg_ex Tot_ex Check_sum
+Train  1029  3118  4147 6798109.00
+Valid   103   312   415 681151.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: mozilla4, Id: 1046
+"dataset191_mozilla4_id1046.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+This is a PROMISE Software Engineering Repository data set made publicly
+available in order to encourage repeatable, verifiable, refutable, and/or
+improvable predictive models of software engineering.
+
+If you publish material based on PROMISE data sets then, please
+follow the acknowledgment guidelines posted on the PROMISE repository
+web page http://promisedata.org/repository .
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+(c) 2007  A. Gunes Koru
+Contact: gkoru AT umbc DOT edu Phone: +1 (410) 455 8843
+This data set is distributed under the
+Creative Commons Attribution-Share Alike 3.0 License
+http://creativecommons.org/licenses/by-sa/3.0/
+
+You are free:
+
+* to Share -- copy, distribute and transmit the work
+* to Remix -- to adapt the work
+
+Under the following conditions:
+
+Attribution. You must attribute the work in the manner specified by
+the author or licensor (but not in any way that suggests that they endorse
+you or your use of the work).
+
+Share Alike. If you alter, transform, or build upon this work, you
+may distribute the resulting work only under the same, similar or a
+compatible license.
+
+* For any reuse or distribution, you must make clear to others the
+license terms of this work.
+* Any of the above conditions can be waived if you get permission from
+the copyright holder.
+* Apart from the remix rights granted under this license, nothing in
+this license impairs or restricts the author's moral rights.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+1. Title: Recurrent event (defect fix) and size data for Mozilla Classes
+This one includes a binary attribute (event) to show defect fix.
+The data is at the "observation" level. Each modification made to
+a C++ class was entered as an observation. A newly added class
+created an observation. The observation period was between
+May 29, 2002 and Feb 22, 2006.
+
+2. Sources
+(a) Creator: A. Gunes Koru
+(b) Date: February 23, 2007
+(c) Contact: gkoru AT umbc DOT edu Phone: +1 (410) 455 8843
+
+3. Donor: A. Gunes Koru
+
+4. Past Usage: This data set was used for:
+
+A. Gunes Koru, Dongsong Zhang, and Hongfang Liu, "Modeling the
+Effect of Size on Defect Proneness for Open-Source Software",
+Predictive Models in Software Engineering Workshop, PROMISE 2007,
+May 20th 2007, Minneapolis, Minnesota, US.
+
+Abstract:
+Quality is becoming increasingly important with the continuous
+adoption of open-source software.  Previous research has found that
+there is generally a positive relationship between module size and
+defect proneness. Therefore, in open-source software development, it
+is important to monitor module size and understand its impact on
+defect proneness. However, traditional approaches to quality
+modeling, which measure specific system snapshots and obtain future
+defect counts, are not well suited because open-source modules
+usually evolve and their size changes over time. In this study, we
+used Cox proportional hazards modeling with recurrent events to
+study the effect of class size on defect-proneness in the Mozilla
+product. We found that the effect of size was significant, and we
+quantified this effect on defect proneness.
+
+The full paper can be downloaded from A. Gunes Koru's Website
+http://umbc.edu/~gkoru
+by following the Publications link or from the Web site of PROMISE 2007.
+
+5. Features:
+
+This data set is used to create a conditional Cox Proportional
+Hazards Model
+
+id: A numeric identification assigned to each separate C++ class
+(Note that the id's do not increment from the first to the last
+data row)
+
+start: A time infinitesimally greater than the time of the modification
+that created this observation (practically, modification time). When a
+class is introduced to a system, a new observation is entered with start=0
+
+end: Either the time of the next modification, or the end of the
+observation period, or the time of deletion, whichever comes first.
+
+event: event is set to 1 if a defect fix takes place
+at the time represented by 'end', or 0 otherwise.  A class deletion
+is handled easily by entering a final observation whose event is set
+to 1 if the class is deleted for corrective maintenance, or 0 otherwise.
+
+size: It is a time-dependent covariate and its column carries the
+number of source Lines of Code of the C++ classes
+at time 'start'. Blank and comment lines are not counted.
+
+state: Initially set to 0, and it becomes 1 after the class
+experiences an event, and remains at 1 thereafter.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: jEdit_4.2_4.3, Id: 1048
+"dataset139_jEdit_4.2_4.3_id1048.Rda"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: mc2, Id: 1054
+"dataset140_mc2_id1054.Rda"
+
+
+**Author**: Mike Chapman, NASA  
+**Source**: [tera-PROMISE](http://openscience.us/repo/defect/mccabehalsted/mc2.html) - 2004  
+**Please cite**: Sayyad Shirabad, J. and Menzies, T.J. (2005) The PROMISE Repository of Software Engineering Databases. School of Information Technology and Engineering, University of Ottawa, Canada.  
+  
+**MC2 Software defect prediction**  
+One of the NASA Metrics Data Program defect data sets. The specific type of software is unknown. Data comes from McCabe and Halstead features extractors of source code.  These features were defined in the 70s in an attempt to objectively characterize code features that are associated with software quality.
+
+### Relevant papers  
+
+- Shepperd, M. and Qinbao Song and Zhongbin Sun and Mair, C. (2013)
+Data Quality: Some Comments on the NASA Software Defect Datasets, IEEE Transactions on Software Engineering, 39.
+
+- Tim Menzies and Justin S. Di Stefano (2004) How Good is Your Blind Spot Sampling Policy? 2004 IEEE Conference on High Assurance
+Software Engineering.
+
+- T. Menzies and J. DiStefano and A. Orrego and R. Chapman (2004) Assessing Predictors of Software Defects", Workshop on Predictive Software Models, Chicago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: ar4, Id: 1061
+"dataset144_ar4_id1061.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: kc1, Id: 1067
+"dataset194_kc1_id1067.Rda"
+
+
+**Author**: Mike Chapman, NASA  
+**Source**: [tera-PROMISE](http://openscience.us/repo/defect/mccabehalsted/kc1.html) - 2004  
+**Please cite**: Sayyad Shirabad, J. and Menzies, T.J. (2005) The PROMISE Repository of Software Engineering Databases. School of Information Technology and Engineering, University of Ottawa, Canada.  
+  
+**KC1 Software defect prediction**  
+One of the NASA Metrics Data Program defect data sets. Data from software for storage management for receiving and processing ground data. Data comes from McCabe and Halstead features extractors of source code.  These features were defined in the 70s in an attempt to objectively characterize code features that are associated with software quality.
+
+### Attribute Information  
+
+1. loc             : numeric % McCabe's line count of code
+2. v(g)            : numeric % McCabe "cyclomatic complexity"
+3. ev(g)           : numeric % McCabe "essential complexity"
+4. iv(g)           : numeric % McCabe "design complexity"
+5. n               : numeric % Halstead total operators + operands
+6. v               : numeric % Halstead "volume"
+7. l               : numeric % Halstead "program length"
+8. d               : numeric % Halstead "difficulty"
+9. i               : numeric % Halstead "intelligence"
+10. e               : numeric % Halstead "effort"
+11. b               : numeric % Halstead 
+12. t               : numeric % Halstead's time estimator
+13. lOCode          : numeric % Halstead's line count
+14. lOComment       : numeric % Halstead's count of lines of comments
+15. lOBlank         : numeric % Halstead's count of blank lines
+16. lOCodeAndComment: numeric
+17. uniq_Op         : numeric % unique operators
+18. uniq_Opnd       : numeric % unique operands
+19. total_Op        : numeric % total operators
+20. total_Opnd      : numeric % total operands
+21. branchCount     : numeric % of the flow graph
+22. problems        : {false,true} % module has/has not one or more reported defects
+
+### Relevant papers  
+
+- Shepperd, M. and Qinbao Song and Zhongbin Sun and Mair, C. (2013)
+Data Quality: Some Comments on the NASA Software Defect Datasets, IEEE Transactions on Software Engineering, 39.
+
+- Tim Menzies and Justin S. Di Stefano (2004) How Good is Your Blind Spot Sampling Policy? 2004 IEEE Conference on High Assurance
+Software Engineering.
+
+- T. Menzies and J. DiStefano and A. Orrego and R. Chapman (2004) Assessing Predictors of Software Defects", Workshop on Predictive Software Models, Chicago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: jEdit_4.0_4.2, Id: 1073
+"dataset151_jEdit_4.0_4.2_id1073.Rda"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: badges2, Id: 1121
+"dataset153_badges2_id1121.Rda"
+
+
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Dataset from the MLRR repository: http://axon.cs.byu.edu:5000/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: Internet-Advertisements, Id: 1176
+"dataset243_Internet-Advertisements_id1176.Rda"
+
+
+**Author**: Nicholas Kushmerick  
+**Source**: [UCI](http://archive.ics.uci.edu/ml/datasets/Internet+Advertisements) - 1998  
+**Please cite**:   
+
+### Description
+
+This dataset represents a set of possible advertisements on Internet pages
+
+### Sources
+
+(a) Creator and donor:
+
+Nicholas Kushmerick - nick@ucd.ie
+
+### Dataset Information
+
+The features encode the geometry of the image (if available) as well as phrases occurring in the URL, the image's URL and alt text, the anchor text, and words occurring near the anchor text. The task is to predict whether an image is an advertisement ("ad") or not ("nonad").
+
+### Atributtes Information
+
+There are : 3 continuous attributes. The others are binary.
+This is the "STANDARD encoding" mentioned in the [Kushmerick, 99] (see below). 
+One or more of the three continuous features are missing in 28% of the instances.
+Missing values should be interpreted as "unknown".
+
+### Relevant Papers  
+
+N. Kushmerick (1999). "Learning to remove Internet advertisements", 3rd Int Conf Autonomous Agents.  
+Available at: http://rexa.info/paper/2fdc1cee89b7f4f2c9227d6f5d9b05d22c5ab3e9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: KungChi3, Id: 1441
+"dataset154_KungChi3_id1441.Rda"
+
+
+**Author**: Hans Bauer Jesus","Deter Bergman  
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Kung chi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: MegaWatt1, Id: 1442
+"dataset155_MegaWatt1_id1442.Rda"
+
+
+**Author**: Hans Bauer Jesus","Deter Bergman  
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Mega watt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: PizzaCutter3, Id: 1444
+"dataset197_PizzaCutter3_id1444.Rda"
+
+
+**Author**: Hans Bauer Jesus","Deter Bergman  
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Pizza cutter 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: CastMetal1, Id: 1447
+"dataset157_CastMetal1_id1447.Rda"
+
+
+**Author**: Hans Bauer Jesus","Deter Bergman  
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+cast metal 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: PieChart4, Id: 1454
+"dataset201_PieChart4_id1454.Rda"
+
+
+**Author**: Hans Bauer Jesus","Deter Bergman  
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+pie chart 4
+
+Deactivated: this is a duplicate of https://www.openml.org/d/1049
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: acute-inflammations, Id: 1455
+"dataset158_acute-inflammations_id1455.Rda"
+
+
+**Author**: Jacek Czerniak     
+**Source**: UCI     
+**Please cite**:  J.Czerniak, H.Zarzycki, Application of rough sets in the presumptive diagnosis of urinary system diseases, Artificial Intelligence and Security in Computing Systems, ACS'2002 9th International Conference Proceedings, Kluwer Academic Publishers,2003, pp. 41-51.
+
+
+* Abstract: 
+
+The data was created by a medical expert as a data set to test the expert system, which will perform the presumptive diagnosis of two diseases of the urinary system.
+
+* Source:   
+  
+Jacek Czerniak, Ph.D., Assistant Professor
+Systems Research Institute
+Polish Academy of Sciences
+Laboratory of Intelligent Systems
+ul. Newelska 6, Room 218
+01-447 Warszawa, Poland
+e-mail: jacek.czerniak 'at' ibspan.waw.pl or jczerniak 'at' ukw.edu.pl 
+
+
+* Data Set Information:
+ 
+The main idea of this data set is to prepare the algorithm of the expert system, which will perform the presumptive diagnosis of two diseases of urinary system. It will be the example of diagnosing of the acute inflammations of urinary bladder and acute nephritises. For better understanding of the problem let us consider definitions of both diseases given by medics. Acute inflammation of urinary bladder is characterised by sudden occurrence of pains in the abdomen region and the urination in form of constant urine pushing, micturition pains and sometimes lack of urine keeping. Temperature of the body is rising, however most often not above 38C. The excreted urine is turbid and sometimes bloody. At proper treatment, symptoms decay usually within several days. However, there is inclination to returns. At persons with acute inflammation of urinary bladder, we should expect that the illness will turn into protracted form.
+
+Acute nephritis of renal pelvis origin occurs considerably more often at women than at men. It begins with sudden fever, which reaches, and sometimes exceeds 40C. The fever is accompanied by shivers and one- or both-side lumbar pains, which are sometimes very strong. Symptoms of acute inflammation of urinary bladder appear very often. Quite not infrequently there are nausea and vomiting and spread pains of whole abdomen.
+
+The data was created by a medical expert as a data set to test the expert system, which will perform the presumptive diagnosis of two  diseases of urinary system. The basis for rules detection was Rough Sets Theory. Each instance represents an potential patient. Each line of the data file starts with a digit which tells the temperature of patient.
+  
+-- Attribute lines:   
+For example, '35,9 no no yes yes yes yes no'   
+Where:   
+'35,9' Temperature of patient   
+'no' Occurrence of nausea   
+'no' Lumbar pain   
+'yes' Urine pushing (continuous need for urination)   
+'yes' Micturition pains   
+'yes' Burning of urethra, itch, swelling of urethra outlet   
+'yes' decision: Inflammation of urinary bladder   
+'no' decision: Nephritis of renal pelvis origin    
+
+*  Attribute Information:
+  
+a1 Temperature of patient { 35C-42C }    
+a2 Occurrence of nausea { yes, no }   
+a3 Lumbar pain { yes, no }   
+a4 Urine pushing (continuous need for urination) { yes, no }   
+a5 Micturition pains { yes, no }   
+a6 Burning of urethra, itch, swelling of urethra outlet { yes, no }   
+d1 decision: Inflammation of urinary bladder { yes, no }   
+d2 decision: Nephritis of renal pelvis origin { yes, no }   
+
+
+* Relevant Papers:
+
+J.Czerniak, H.Zarzycki, Application of rough sets in the presumptive diagnosis of urinary system diseases, Artificial Intelligence and Security in Computing Systems, ACS'2002 9th International Conference Proceedings, Kluwer Academic Publishers,2003, pp. 41-51
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: bank-marketing, Id: 1461
+"dataset233_bank-marketing_id1461.Rda"
+
+
+**Author**: Paulo Cortez, Sérgio Moro
+**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/bank+marketing)
+**Please cite**: S. Moro, R. Laureano and P. Cortez. Using Data Mining for Bank Direct Marketing: An Application of the CRISP-DM Methodology. In P. Novais et al. (Eds.), Proceedings of the European Simulation and Modelling Conference - ESM'2011, pp. 117-121, Guimarães, Portugal, October, 2011. EUROSIS.       
+
+**Bank Marketing**  
+The data is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be (or not) subscribed. 
+
+The classification goal is to predict if the client will subscribe a term deposit (variable y).
+
+### Attribute information  
+For more information, read [Moro et al., 2011].
+
+Input variables:
+
+- bank client data:
+
+1 - age (numeric) 
+
+2 - job : type of job (categorical: "admin.","unknown","unemployed","management","housemaid","entrepreneur", "student","blue-collar","self-employed","retired","technician","services") 
+
+3 - marital : marital status (categorical: "married","divorced","single"; note: "divorced"  means divorced or widowed) 
+
+4 - education (categorical: "unknown","secondary","primary","tertiary") 
+
+5 - default: has credit in default? (binary: "yes","no") 
+
+6 - balance: average yearly balance, in euros (numeric) 
+
+7 - housing: has housing loan? (binary: "yes","no") 
+
+8 - loan: has personal loan? (binary: "yes","no")
+
+- related with the last contact of the current campaign:
+
+9 - contact: contact communication type (categorical: "unknown","telephone","cellular")
+
+10 - day: last contact day of the month (numeric)
+
+11 - month: last contact month of year (categorical: "jan", "feb", "mar", ..., "nov", "dec")
+
+12 - duration: last contact duration, in seconds (numeric)
+
+- other attributes:
+
+13 - campaign: number of contacts performed during this campaign and for this client (numeric, includes last contact)
+
+14 - pdays: number of days that passed by after the client was last contacted from a previous campaign (numeric, -1 means client was not previously contacted) 
+
+15 - previous: number of contacts performed before this campaign and for this client (numeric) 
+
+16 - poutcome: outcome of the previous marketing campaign (categorical: "unknown","other","failure","success")
+ 
+- output variable (desired target):
+
+17 - y - has the client subscribed a term deposit? (binary: "yes","no")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: banknote-authentication, Id: 1462
+"dataset159_banknote-authentication_id1462.Rda"
+
+
+Author: Volker Lohweg (University of Applied Sciences, Ostwestfalen-Lippe)  
+Source: [UCI](https://archive.ics.uci.edu/ml/datasets/banknote+authentication) - 2012  
+Please cite: [UCI](https://archive.ics.uci.edu/ml/citation_policy.html) 
+
+Dataset about distinguishing genuine and forged banknotes. Data were extracted from images that were taken from genuine and forged banknote-like specimens. For digitization, an industrial camera usually used for print inspection was used. The final images have 400x 400 pixels. Due to the object lens and distance to the investigated object gray-scale pictures with a resolution of about 660 dpi were gained. A Wavelet Transform tool was used to extract features from these images.
+
+### Attribute Information  
+
+V1. variance of Wavelet Transformed image (continuous)  
+V2. skewness of Wavelet Transformed image (continuous)  
+
+
+Class (target). Presumably 1 for genuine and 2 for forged
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: blogger, Id: 1463
+"dataset160_blogger_id1463.Rda"
+
+
+**Author**:   
+**Source**: UCI
+**Please cite**:   
+
+Source:
+ 
+http://www.ijcaonline.org/archives/volume47/number18/7291-0509
+ 
+ 
+Data Set Information:
+ 
+In this paper, we look for to recognize the causes of users tend to cyber space in Kohkiloye and Boyer Ahmad Province in Iran. Collecting information to form database is done by questionnaire. This questionnaire is provided as oral, written and also programming of a website which includes an internet questionnaire and the users can answer the questions as they wish. They entered their used websites, blogs and social networks during the day. After collecting questionnaires, the wed addresses are gathered to get expected results. And finally, their trustfulness is checked by analyzing their used web pages. As the results were same, for getting better and noiseless response, they will put in database.
+  
+Attribute Information:
+ 
+We considered the following parameters as questions: age,  education, political attitudes, blog topic, and the type of the identity in internet, the influence of manager inefficiency on tendency, the effect of inefficient media on tendency, the effects of social and political conditions on tendency and finally the effect of poverty in the province on tendency. The noisy or too detailed data in database makes us far from to get proper and suitable answers of algorithms [8]. We preprocessed the data and eliminated some non-relevant data. Finally the followings are considered as the main fields which include: education, political caprice, topics, local media turnover (LMT) and local, political and social space (LPSS). 
+
+The collected data are shown in Table 1. In order to get correct answer, we classify bloggers to two groups: professional bloggers and seasonal (temporary) bloggers. Professional bloggers are those who adopt blog as an effective digital media and interested in digital writing in continuous time intervals. Seasonal (temporary) bloggers are not professional and follow blogging in discrete time periods. In this study, we review the tendency factors considering whether these people are among professional bloggers (Pro Bloggers, PB) and then, consider the other factors according to it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: blood-transfusion-service-center, Id: 1464
+"dataset161_blood-transfusion-service-center_id1464.Rda"
+
+
+**Author**: Prof. I-Cheng Yeh  
+**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/Blood+Transfusion+Service+Center)  
+**Please cite**: Yeh, I-Cheng, Yang, King-Jang, and Ting, Tao-Ming, "Knowledge discovery on RFM model using Bernoulli sequence", Expert Systems with Applications, 2008.   
+
+**Blood Transfusion Service Center Data Set**  
+Data taken from the Blood Transfusion Service Center in Hsin-Chu City in Taiwan -- this is a classification problem.
+
+To demonstrate the RFMTC marketing model (a modified version of RFM), this study adopted the donor database of Blood Transfusion Service Center in Hsin-Chu City in Taiwan. The center passes their blood transfusion service bus to one university in Hsin-Chu City to gather blood donated about every three months. To build an FRMTC model, we selected 748 donors at random from the donor database. 
+
+### Attribute Information  
+* V1: Recency - months since last donation
+* V2: Frequency - total number of donation
+* V3: Monetary - total blood donated in c.c.
+* V4: Time - months since first donation), and a binary variable representing whether he/she donated blood in March 2007 (1 stand for donating blood; 0 stands for not donating blood).
+
+The target attribute is a binary variable representing whether he/she donated blood in March 2007 (2 stands for donating blood; 1 stands for not donating blood).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: climate-model-simulation-crashes, Id: 1467
+"dataset162_climate-model-simulation-crashes_id1467.Rda"
+
+
+**Author**: D. Lucas, R. Klein, J. Tannahill, D. Ivanova, S. Brandon, D. Domyancic, Y. Zhang.
+
+**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/climate+model+simulation+crashes)
+
+**Please Cite**:
+Lucas, D. D., Klein, R., Tannahill, J., Ivanova, D., Brandon, S., Domyancic, D., and Zhang, Y.: Failure analysis of parameter-induced simulation crashes in climate models, Geosci. Model Dev. Discuss., 6, 585-623, [Web Link](http://www.geosci-model-dev-discuss.net/6/585/2013/gmdd-6-585-2013.html), 2013.
+
+
+Source:
+
+D. Lucas (ddlucas .at. alum.mit.edu), Lawrence Livermore National Laboratory; R. Klein (rklein .at. astron.berkeley.edu), Lawrence Livermore National Laboratory & U.C. Berkeley; J. Tannahill (tannahill1 .at. llnl.gov), Lawrence Livermore National Laboratory; D. Ivanova (ivanova2 .at. llnl.gov), Lawrence Livermore National Laboratory; S. Brandon (brandon1 .at. llnl.gov), Lawrence Livermore National Laboratory; D. Domyancic (domyancic1 .at. llnl.gov), Lawrence Livermore National Laboratory; Y. Zhang (zhang24 .at. llnl.gov), Lawrence Livermore National Laboratory .
+
+This data was constructed using LLNL's UQ Pipeline, was created under the auspices of the US Department of Energy by Lawrence Livermore National Laboratory under Contract DE-AC52-07NA27344, was funded by LLNL's Uncertainty Quantification Strategic Initiative Laboratory Directed Research and Development Project under tracking code 10-SI-013, and is released under UCRL number LLNL-MISC-633994.
+
+
+Data Set Information:
+
+This dataset contains records of simulation crashes encountered during climate model uncertainty quantification (UQ) ensembles. Ensemble members were constructed using a Latin hypercube method in LLNL's UQ Pipeline software system to sample the uncertainties of 18 model parameters within the Parallel Ocean Program (POP2) component of the Community Climate System Model (CCSM4). Three separate Latin hypercube ensembles were conducted, each containing 180 ensemble members. 46 out of the 540 simulations failed for numerical reasons at combinations of parameter values. The goal is to use classification to predict simulation outcomes (fail or succeed) from input parameter values, and to use sensitivity analysis and feature selection to determine the causes of simulation crashes. Further details about the data and methods are given in the publication 'Failure Analysis of Parameter-Induced Simulation Crashes in Climate Models,' Geoscientific Model Development [(Web Link)](doi:10.5194/gmdd-6-585-2013).
+
+
+Attribute Information:
+
+The goal is to predict climate model simulation outcomes (column 21, fail or succeed) given scaled values of climate model input parameters (columns 3-20). 
+
+- Column 1: Latin hypercube study ID (study 1 to study 3) 
+
+- Column 2: simulation ID (run 1 to run 180) 
+
+- Columns 3-20: values of 18 climate model parameters scaled in the interval [0, 1] 
+
+- Column 21: simulation outcome (0 = failure, 1 = success)
+
+Relevant Papers:
+
+Lucas, D. D., Klein, R., Tannahill, J., Ivanova, D., Brandon, S., Domyancic, D., and Zhang, Y.: Failure analysis of parameter-induced simulation crashes in climate models, Geosci. Model Dev. Discuss., 6, 585-623, [Web Link](http://www.geosci-model-dev-discuss.net/6/585/2013/gmdd-6-585-2013.html), 2013.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: eeg-eye-state, Id: 1471
+"dataset234_eeg-eye-state_id1471.Rda"
+
+
+**Author**: Oliver Roesler  
+**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/EEG+Eye+State), Baden-Wuerttemberg, Cooperative State University (DHBW), Stuttgart, Germany  
+**Please cite**: [UCI](https://archive.ics.uci.edu/ml/citation_policy.html)  
+
+All data is from one continuous EEG measurement with the Emotiv EEG Neuroheadset. The duration of the measurement was 117 seconds. The eye state was detected via a camera during the EEG measurement and added later manually to the file after analyzing the video frames. '1' indicates the eye-closed and '0' the eye-open state. All values are in chronological order with the first measured value at the top of the data.
+
+The features correspond to 14 EEG measurements from the headset, originally labeled AF3, F7, F3, FC5, T7, P, O1, O2, P8, T8, FC6, F4, F8, AF4, in that order.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: fertility, Id: 1473
+"dataset163_fertility_id1473.Rda"
+
+
+**Author**: David Gil, Jose Luis Girela
+   
+**Source**: UCI
+
+**Please cite**: David Gil, Jose Luis Girela, Joaquin De Juan, M. Jose Gomez-Torres, and Magnus Johnsson. Predicting seminal quality with artificial intelligence methods. Expert Systems with Applications, 39(16):12564 - 12573, 2012  
+
+Source:
+
+David Gil, 
+dgil '@' dtic.ua.es, 
+Lucentia Research Group, Department of Computer Technology, University of Alicante 
+
+Jose Luis Girela, 
+girela '@' ua.es, 
+Department of Biotechnology, University of Alicante
+
+Attribute Information:
+
+Season in which the analysis was performed. 1) winter, 2) spring, 3) Summer, 4) fall. (-1, -0.33, 0.33, 1) 
+Age at the time of analysis. 18-36 (0, 1) 
+Childish diseases (ie , chicken pox, measles, mumps, polio) 1) yes, 2) no. (0, 1) 
+Accident or serious trauma 1) yes, 2) no. (0, 1) 
+Surgical intervention 1) yes, 2) no. (0, 1) 
+High fevers in the last year 1) less than three months ago, 2) more than three months ago, 3) no. (-1, 0, 1) 
+Frequency of alcohol consumption 1) several times a day, 2) every day, 3) several times a week, 4) once a week, 5) hardly ever or never (0, 1) 
+Smoking habit 1) never, 2) occasional 3) daily. (-1, 0, 1) 
+Number of hours spent sitting per day ene-16 (0, 1) 
+Output: Diagnosis normal (N), altered (O)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: hill-valley, Id: 1479
+"dataset235_hill-valley_id1479.Rda"
+
+
+**Author**: Lee Graham, Franz Oppacher  
+**Source**: [UCI](http://archive.ics.uci.edu/ml/datasets/hill-valley)  
+**Please cite**:   
+
+Each record represents 100 points on a two-dimensional graph. When plotted in order (from 1 through 100) as the Y coordinate, the points will create either a Hill (a “bump” in the terrain) or a Valley (a “dip” in the terrain). 
+See the original source for some examples of these graphs. 
+
+In the original form, there are six files. This is the non-noisy version, with training and test sets merged. 
+
+### Attribute Information:
+
+1-100: Labeled “X##”. Floating point values (numeric), the Y-values of the graphs.  
+101: Labeled “class”. Binary {0, 1} representing {valley, hill}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: ilpd, Id: 1480
+"dataset164_ilpd_id1480.Rda"
+
+
+**Author**: Bendi Venkata Ramana, M. Surendra Prasad Babu, N. B. Venkateswarlu  
+**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/ILPD+(Indian+Liver+Patient+Dataset)) - 2012  
+**Please cite**: [UCI](https://archive.ics.uci.edu/ml/citation_policy.html)  
+
+**Indian Liver Patient Dataset**  
+This data set contains 416 liver patient records and 167 non liver patient records.The data set was collected from north east of Andhra Pradesh, India. The class label divides the patients into 2 groups (liver patient or not). This data set contains 441 male patient records and 142 female patient records. 
+
+### Attribute Information  
+V1. Age of the patient. Any patient whose age exceeded 89 is listed as being of age "90".  
+V2. Gender of the patient  
+V3. Total Bilirubin  
+V4. Direct Bilirubin  
+V5. Alkphos Alkaline Phosphatase  
+V6. Sgpt Alanine Aminotransferase  
+V7. Sgot Aspartate Aminotransferase   
+V8. Total Proteins  
+V9. Albumin  
+V10. A/G Ratio Albumin and Globulin Ratio  
+
+A feature indicating a train-test split has been removed.  
+
+### Relevant Papers  
+1. Bendi Venkata Ramana, Prof. M. S. Prasad Babu and Prof. N. B. Venkateswarlu, A Critical Comparative Study of Liver Patients from USA and INDIA: An Exploratory Analysis, International Journal of Computer Science Issues, ISSN:1694-0784, May 2012. 
+2. Bendi Venkata Ramana, Prof. M. S. Prasad Babu and Prof. N. B. Venkateswarlu, A Critical Study of Selected Classification Algorithms for Liver Disease Diagnosis, International Journal of Database Management Systems (IJDMS), Vol.3, No.2, ISSN : 0975-5705, PP 101-114, May 2011.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: ozone-level-8hr, Id: 1487
+"dataset236_ozone-level-8hr_id1487.Rda"
+
+
+**Author**: Kun Zhang, Wei Fan, XiaoJing Yuan
+
+**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/ozone+level+detection)
+
+**Please cite**:   
+
+Forecasting skewed biased stochastic ozone days: analyses, solutions and beyond, Knowledge and Information Systems, Vol. 14, No. 3, 2008. 
+
+
+1 . Abstract: 
+Two ground ozone level data sets are included in this collection. One is the eight hour peak set (eighthr.data), the other is the one hour peak set (onehr.data). Those data were collected from 1998 to 2004 at the Houston, Galveston and Brazoria area.
+
+2. Source:
+
+Kun Zhang, zhang.kun05 '@' gmail.com, Department of Computer Science, Xavier University of Lousiana 
+Wei Fan, wei.fan '@' gmail.com, IBM T.J.Watson Research 
+XiaoJing Yuan, xyuan '@' uh.edu, Engineering Technology Department, College of Technology, University of Houston 
+
+
+3. Data Set Information:
+
+All the attribute start with T means the temperature measured at different time throughout the day; and those starts with WS indicate the wind speed at various time. 
+
+WSR_PK: continuous. peek wind speed -- resultant (meaning average of wind vector) 
+WSR_AV: continuous. average wind speed 
+T_PK: continuous. Peak T 
+T_AV: continuous. Average T 
+T85: continuous. T at 850 hpa level (or about 1500 m height) 
+RH85: continuous. Relative Humidity at 850 hpa 
+U85: continuous. (U wind - east-west direction wind at 850 hpa) 
+V85: continuous. V wind - N-S direction wind at 850 
+HT85: continuous. Geopotential height at 850 hpa, it is about the same as height at low altitude 
+T70: continuous. T at 700 hpa level (roughly 3100 m height) 
+
+RH70: continuous. 
+U70: continuous. 
+V70: continuous. 
+HT70: continuous. 
+
+T50: continuous. T at 500 hpa level (roughly at 5500 m height) 
+
+RH50: continuous. 
+U50: continuous. 
+V50: continuous. 
+HT50: continuous. 
+
+KI: continuous. K-Index [Web Link] 
+TT: continuous. T-Totals [Web Link] 
+SLP: continuous. Sea level pressure 
+SLP_: continuous. SLP change from previous day 
+
+Precp: continuous. -- precipitation
+
+
+4. Attribute Information:
+
+The following are specifications for several most important attributes that are highly valued by Texas Commission on Environmental Quality (TCEQ). More details can be found in the two relevant papers. 
+
+O 3 - Local ozone peak prediction 
+Upwind - Upwind ozone background level 
+EmFactor - Precursor emissions related factor 
+Tmax - Maximum temperature in degrees F 
+Tb - Base temperature where net ozone production begins (50 F) 
+SRd - Solar radiation total for the day 
+WSa - Wind speed near sunrise (using 09-12 UTC forecast mode) 
+WSp - Wind speed mid-day (using 15-21 UTC forecast mode) 
+
+
+5. Relevant Papers:
+
+Forecasting skewed biased stochastic ozone days: analyses, solutions and beyond, Knowledge and Information Systems, Vol. 14, No. 3, 2008. 
+
+It Discusses details about the dataset, its use as well as various experiments (both cross-validation and streaming) using many state-of-the-art methods. 
+A shorter version of the paper (does not contain some detailed experiments as the journal paper above) is in: 
+Forecasting Skewed Biased Stochastic Ozone Days: Analyses and Solutions. ICDM 2006: 753-764
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: parkinsons, Id: 1488
+"dataset165_parkinsons_id1488.Rda"
+
+
+**Author**:   
+**Source**: UCI
+**Please cite**: 'Exploiting Nonlinear Recurrence and Fractal Scaling Properties for Voice Disorder Detection', Little MA, McSharry PE, Roberts SJ, Costello DAE, Moroz IM. BioMedical Engineering OnLine 2007, 6:23 (26 June 2007) 
+
+* Abstract: 
+
+Oxford Parkinson's Disease Detection Dataset
+
+* Source:
+
+The dataset was created by Max Little of the University of Oxford, in collaboration with the National Centre for Voice and Speech, Denver, Colorado, who recorded the speech signals. The original study published the feature extraction methods for general voice disorders.
+
+* Data Set Information:
+This dataset is composed of a range of biomedical voice measurements from 31 people, 23 with Parkinson's disease (PD). Each column in the table is a particular voice measure, and each row corresponds one of 195 voice recording from these individuals ("name" column). The main aim of the data is to discriminate healthy people from those with PD, according to "status" column which is set to 0 for healthy and 1 for PD. 
+
+Further details are contained in the following reference -- if you use this dataset, please cite: 
+Max A. Little, Patrick E. McSharry, Eric J. Hunter, Lorraine O. Ramig (2008), 'Suitability of dysphonia measurements for telemonitoring of Parkinson's disease', IEEE Transactions on Biomedical Engineering (to appear).
+
+
+* Attribute Information:
+
+Matrix column entries (attributes): 
+name - ASCII subject name and recording number 
+MDVP:Fo(Hz) - Average vocal fundamental frequency 
+MDVP:Fhi(Hz) - Maximum vocal fundamental frequency 
+MDVP:Flo(Hz) - Minimum vocal fundamental frequency 
+MDVP:Jitter(%),MDVP:Jitter(Abs),MDVP:RAP,MDVP:PPQ,Jitter:DDP - Several measures of variation in fundamental frequency 
+MDVP:Shimmer,MDVP:Shimmer(dB),Shimmer:APQ3,Shimmer:APQ5,MDVP:APQ,Shimmer:DDA - Several measures of variation in amplitude 
+NHR,HNR - Two measures of ratio of noise to tonal components in the voice 
+status - Health status of the subject (one) - Parkinson's, (zero) - healthy 
+RPDE,D2 - Two nonlinear dynamical complexity measures 
+DFA - Signal fractal scaling exponent 
+spread1,spread2,PPE - Three nonlinear measures of fundamental frequency variation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: phoneme, Id: 1489
+"dataset202_phoneme_id1489.Rda"
+
+
+**Author**: Dominique Van Cappel, THOMSON-SINTRA  
+**Source**: [KEEL](http://sci2s.ugr.es/keel/dataset.php?cod=105#sub2), [ELENA](https://www.elen.ucl.ac.be/neural-nets/Research/Projects/ELENA/databases/REAL/phoneme/) - 1993  
+**Please cite**: None  
+
+The aim of this dataset is to distinguish between nasal (class 0) and oral sounds (class 1). Five different attributes were chosen to characterize each vowel: they are the amplitudes of the five first harmonics AHi, normalised by the total energy Ene (integrated on all the frequencies): AHi/Ene. The phonemes are transcribed as follows: sh as in she, dcl as in dark, iy as the vowel in she, aa as the vowel in dark, and ao as the first vowel in water.  
+
+### Source
+
+The current dataset was formatted by the KEEL repository, but originally hosted by the [ELENA Project](https://www.elen.ucl.ac.be/neural-nets/Research/Projects/ELENA/elena.htm#stuff). The dataset originates from the European ESPRIT 5516 project: ROARS. The aim of this project was the development and the implementation of a real time analytical system for French and Spanish speech recognition.  
+
+### Relevant information
+
+Most of the already existing speech recognition systems are global systems (typically Hidden Markov Models and Time Delay Neural Networks) which recognizes signals and do not really use the speech
+specificities.  On the contrary, analytical systems take into account the articulatory process leading to the different phonemes of a given language, the idea being to deduce the presence of each of the
+phonetic features from the acoustic observation.
+
+The main difficulty of analytical systems is to obtain acoustical parameters sufficiantly reliable. These acoustical measurements must :
+
+   - contain all the information relative to the concerned phonetic feature.
+   - being speaker independent.
+   - being context independent.
+   - being more or less robust to noise.
+
+The primary acoustical observation is always voluminous (spectrum x N different observation moments) and classification cannot been processed directly.
+
+In ROARS, the initial database is provided by cochlear spectra, which may be seen as the output of a filters bank having a constant DeltaF/F0, where the central frequencies are distributed on a
+logarithmic scale (MEL type) to simulate the frequency answer of the auditory nerves.  The filters outputs are taken every 2 or 8 msec (integration on 4 or 16 msec) depending on the type of phoneme
+observed (stationary or transitory).  
+
+The aim of the present database is to distinguish between nasal and
+oral vowels. There are thus two different classes:
+
+- Class 0 : Nasals  
+- Class 1 : Orals        
+
+This database contains vowels coming from 1809 isolated syllables (for example: pa, ta, pan,...). Five different attributes were chosen to characterize each vowel: they are the amplitudes of the five first harmonics AHi, normalised by the total energy Ene (integrated on all the frequencies): AHi/Ene. Each harmonic is signed: positive when it corresponds to a local maximum of the spectrum and negative otherwise.
+
+Three observation moments have been kept for each vowel to obtain 5427 different instances: 
+
+ - the observation corresponding to the maximum total energy Ene. 
+   
+ - the observations taken 8 msec before and 8 msec after the observation corresponding to this maximum total energy.
+
+From these 5427 initial values, 23 instances for which the amplitude of the 5 first harmonics was zero were removed, leading to the 5404 instances of the present database. The patterns are presented in a random order.
+
+### Past Usage  
+
+Alinat, P., Periodic Progress Report 4, ROARS Project ESPRIT II- Number 5516, February 1993, Thomson report TS. ASM 93/S/EGS/NC/079  
+    
+Guerin-Dugue, A. and others, Deliverable R3-B4-P - Task B4: Benchmarks, Technical report, Elena-NervesII "Enhanced Learning for Evolutive Neural Architecture", ESPRIT-Basic Research Project  Number 6891, June 1995  
+
+Verleysen, M. and Voz, J.L. and Thissen, P. and Legat, J.D., A statistical Neural Network for high-dimensional vector classification, ICNN'95 - IEEE International Conference on Neural Networks, November 1995, Perth, Western Australia.  
+    
+Voz J.L., Verleysen M., Thissen P. and Legat J.D., Suboptimal Bayesian classification by vector quantization with small clusters. ESANN95-European Symposium on Artificial Neural Networks, April 1995, M. Verleysen editor, D facto publications, Brussels, Belgium.  
+    
+Voz J.L., Verleysen M., Thissen P. and Legat J.D., A practical view of  suboptimal Bayesian classification, IWANN95-Proceedings of the International Workshop on Artificial Neural Networks, June 1995, Mira, Cabestany, Prieto editors, Springer-Verlag Lecture Notes in Computer Sciences, Malaga, Spain
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: planning-relax, Id: 1490
+"dataset166_planning-relax_id1490.Rda"
+
+
+**Author**: Rajen Bhatt  
+
+**Source**: UCI 
+
+**Please cite**: Rajen Bhatt, 'Planning-Relax Dataset for Automatic Classification of EEG Signals', UCI Machine Learning Repository
+
+
+* Title:
+
+Planning Relax Data Set 
+
+
+* Abstract: 
+
+The dataset concerns with the classification of two mental stages from recorded EEG signals: Planning (during imagination of motor act) and Relax state.
+
+* Data Set Characteristics:  
+
+Univariate
+Number of Instances: 182
+Area: Computer
+Attribute Characteristics: Real
+Number of Attributes: 13
+Associated Tasks: Classification
+Missing Values? N/A
+
+* Source:
+
+Rajen Bhatt, rajen.bhatt '@' gmail.com, IIT Delhi
+
+
+* Data Set Information:
+
+EEG record contains many regular oscillations, which are believed to reflect synchronized rhythmic activity in a group of neurons. Most activity related EEG patterns occur within the following frequency bands. Delta (0.5 â€“ 4 Hz.), Theta (4 â€“ 8 Hz), Alpha (8 â€“ 13 Hz), Beta (13 â€“ 22 Hz), and Gamma (30 â€“ 40 Hz). The waves with the frequency of 7 â€“ 13 Hz over motor processing areas are called mu rhythm and reflect idling activity in motor areas. It is more pronounced when the subjects are at rest and at least a second before subjects initiate voluntary movement, the mu activity over the hemisphere contralateral to the region moved shows a decrease in amplitude and is called Event Related Desynchronization (ERD). 
+For the current study, EEG data was collected for 5 times on various days from a healthy right-handed subject of 25 years of age. The data was recorded on a Medelec Profile Digital EEG machine. The settings of high frequency filter 50 Hz, low frequency filter 1.6 Hz, notch filter 50 Hz, sensitivity 70 micro volts/mm, and a sampling rate of 256 Hz were used for the basic signal processing. 
+Eight EEG electrodes (C3, C4, P3, P4, F3, F4, T3, and T4) were placed according to the international standard 10-20 system of electrode placement. Bipolar and unipolar EEG was recorded from eight Ag/AgCI scalp electrodes, which were placed 2.5 cm anterior and posterior to the central electrodes C3 and C4 (left and right side of the hemisphere). A1 and A2 are reference electrodes. The reference electrodes are placed on the left and right ears and the ground electrode on the forehead. EOG (Electrooculogram) being a noise artifact, was derived from two electrodes, placed on the outer cantus of left and right eye in order to detect eye movement. These EOG signals are then used to eliminate eye movement artifacts. 
+The subject was asked to lie down comfortably in a relaxed position with eyes closed and advised to minimize eye movements. The EEG was recorded for the relaxed state for 5 minutes. Following this, an audio beep of 60 db and 0.91 sec. duration was given at the start and end of a 5 second epoch where the subject was asked to mentally plan lifting of the right hand thumb. This activity is collected as a 5 second epoch data corresponding to â€˜movement imageryâ€™ state. After a gap of 5 minutes, the same cue is given to repeat the experiment. The whole experiment lasts for approximately 30 minutes, collecting data for 5 trials of 5 second epoch each for normal relaxed state and 5 trials of 5 second epoch each for movement imagery. No actual movement is performed during the session. All data sets were visually checked for artifacts before final selection.
+
+
+* Attribute Information:
+
+Wavelet transform has been applied for feature extraction for EEG classification. However, wavelet transforms pyramidal algorithm work only on approximation coefficients. So it can not identify 7-13 Hz frequency band. We have extended the methodology by applying wavelet packet analysis, which also decompose detail coefficients. Wavelet packet analysis has been used for signal decomposition with equal frequency bandwidth at each level of decomposition, which leads to an equal number of the approximation and detail coefficients. By applying wavelet packet analysis on the original signal, we have obtained twelve wavelet coefficients in the 7-13 Hz frequency band at the 6th level node (6,2). The signal is reconstructed at node (6,2) and its FFT plot gave the frequency band 7-13 Hz as the most discriminating, in conjunction with the wavelet Daubechies#6 (db6).
+
+
+* Relevant Papers:
+
+1. Rajen B. Bhatt and M. Gopal, 2008, â€œFRCT: Fuzzy-Rough Classification Treesâ€, Pattern Analysis and Applications, 11(1), pp. 73-88. 
+2. Shweta Sahu and Rajen B. Bhatt, â€œAutomatic classification of Electroencephalography Signals using Wavelet Packet Analysis and Fuzzy Decision Treesâ€, in Proc. of 28th National Systems Conference (NSC-2004), Dec. 16-18, Vellore, India. 
+3. Rajen Bhatt, 'Fuzzy-Rough Approach to Pattern Classification:Hybrid Algorithms and Optimization', Ph.D. Thesis, IIT Delhi, 2006.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: qsar-biodeg, Id: 1494
+"dataset203_qsar-biodeg_id1494.Rda"
+
+
+**Author**: Kamel Mansouri, Tine Ringsted, Davide Ballabio  
+**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/QSAR+biodegradation)  
+**Please cite**: Mansouri, K., Ringsted, T., Ballabio, D., Todeschini, R., Consonni, V. (2013). Quantitative Structure - Activity Relationship models for ready biodegradability of chemicals. Journal of Chemical Information and Modeling, 53, 867-878 
+
+
+QSAR biodegradation Data Set 
+
+* Abstract: 
+
+Data set containing values for 41 attributes (molecular descriptors) used to classify 1055 chemicals into 2 classes (ready and not ready biodegradable).
+
+
+* Source:
+
+Kamel Mansouri, Tine Ringsted, Davide Ballabio (davide.ballabio '@' unimib.it), Roberto Todeschini, Viviana Consonni, Milano Chemometrics and QSAR Research Group (http://michem.disat.unimib.it/chm/), UniversitÃ  degli Studi Milano â€“ Bicocca, Milano (Italy)
+
+
+* Data Set Information:
+
+The QSAR biodegradation dataset was built in the Milano Chemometrics and QSAR Research Group (UniversitÃ  degli Studi Milano â€“ Bicocca, Milano, Italy). The research leading to these results has received funding from the European Communityâ€™s Seventh Framework Programme [FP7/2007-2013] under Grant Agreement n. 238701 of Marie Curie ITN Environmental Chemoinformatics (ECO) project. 
+The data have been used to develop QSAR (Quantitative Structure Activity Relationships) models for the study of the relationships between chemical structure and biodegradation of molecules. Biodegradation experimental values of 1055 chemicals were collected from the webpage of the National Institute of Technology and Evaluation of Japan (NITE). Classification models were developed in order to discriminate ready (356) and not ready (699) biodegradable molecules by means of three different modelling methods: k Nearest Neighbours, Partial Least Squares Discriminant Analysis and Support Vector Machines. Details on attributes (molecular descriptors) selected in each model can be found in the quoted reference: Mansouri, K., Ringsted, T., Ballabio, D., Todeschini, R., Consonni, V. (2013). Quantitative Structure - Activity Relationship models for ready biodegradability of chemicals. Journal of Chemical Information and Modeling, 53, 867-878.
+
+
+* Attribute Information:
+
+41 molecular descriptors and 1 experimental class: 
+1) SpMax_L: Leading eigenvalue from Laplace matrix 
+2) J_Dz(e): Balaban-like index from Barysz matrix weighted by Sanderson electronegativity 
+3) nHM: Number of heavy atoms 
+4) F01[N-N]: Frequency of N-N at topological distance 1 
+5) F04[C-N]: Frequency of C-N at topological distance 4 
+6) NssssC: Number of atoms of type ssssC 
+7) nCb-: Number of substituted benzene C(sp2) 
+8) C%: Percentage of C atoms 
+9) nCp: Number of terminal primary C(sp3) 
+10) nO: Number of oxygen atoms 
+11) F03[C-N]: Frequency of C-N at topological distance 3 
+12) SdssC: Sum of dssC E-states 
+13) HyWi_B(m): Hyper-Wiener-like index (log function) from Burden matrix weighted by mass 
+14) LOC: Lopping centric index 
+15) SM6_L: Spectral moment of order 6 from Laplace matrix 
+16) F03[C-O]: Frequency of C - O at topological distance 3 
+17) Me: Mean atomic Sanderson electronegativity (scaled on Carbon atom) 
+18) Mi: Mean first ionization potential (scaled on Carbon atom) 
+19) nN-N: Number of N hydrazines 
+20) nArNO2: Number of nitro groups (aromatic) 
+21) nCRX3: Number of CRX3 
+22) SpPosA_B(p): Normalized spectral positive sum from Burden matrix weighted by polarizability 
+23) nCIR: Number of circuits 
+24) B01[C-Br]: Presence/absence of C - Br at topological distance 1 
+25) B03[C-Cl]: Presence/absence of C - Cl at topological distance 3 
+26) N-073: Ar2NH / Ar3N / Ar2N-Al / R..N..R 
+27) SpMax_A: Leading eigenvalue from adjacency matrix (Lovasz-Pelikan index) 
+28) Psi_i_1d: Intrinsic state pseudoconnectivity index - type 1d 
+29) B04[C-Br]: Presence/absence of C - Br at topological distance 4 
+30) SdO: Sum of dO E-states 
+31) TI2_L: Second Mohar index from Laplace matrix 
+32) nCrt: Number of ring tertiary C(sp3) 
+33) C-026: R--CX--R 
+34) F02[C-N]: Frequency of C - N at topological distance 2 
+35) nHDon: Number of donor atoms for H-bonds (N and O) 
+36) SpMax_B(m): Leading eigenvalue from Burden matrix weighted by mass 
+37) Psi_i_A: Intrinsic state pseudoconnectivity index - type S average 
+38) nN: Number of Nitrogen atoms 
+39) SM6_B(m): Spectral moment of order 6 from Burden matrix weighted by mass 
+40) nArCOOR: Number of esters (aromatic) 
+41) nX: Number of halogen atoms 
+42) experimental class: ready biodegradable (RB) and not ready biodegradable (NRB)
+
+
+* Relevant Papers:
+
+Mansouri, K., Ringsted, T., Ballabio, D., Todeschini, R., Consonni, V. (2013). Quantitative Structure - Activity Relationship models for ready biodegradability of chemicals. Journal of Chemical Information and Modeling, 53, 867-878
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: qualitative-bankruptcy, Id: 1495
+"dataset167_qualitative-bankruptcy_id1495.Rda"
+
+
+**Author**:  A. Martin, J. Uthayakumar, M. Nadarajan, V. Prasanna Venkatesan   
+**Source**: UCI   
+**Please cite**:    
+
+* Abstract: 
+
+Predict the Bankruptcy from Qualitative parameters from experts.
+
+* Source:
+
+Source Information
+-- Creator : Mr.A.Martin(jayamartin '@' yahoo.com)
+Mr.J.Uthayakumar (uthayakumar17691 '@' gmail.com)
+Mr.M.Nadarajan(nadaraj.muthuvel '@' gmail.com)
+-- Guided By : Dr.V.Prasanna Venkatesan
+-- Institution : Sri Manakula Vinayagar Engineering College and Pondicherry University
+-- Country : India
+-- Date : February 2014
+
+
+* Data Set Information:
+
+The parameters which we used for collecting the dataset is referred from the paper 'The discovery of expert' decision rules from qualitative bankruptcy data using genetic algorithms' by Myoung-Jong Kim*, Ingoo Han.
+
+
+* Attribute Information: 
+(P=Positive,A-Average,N-negative,B-Bankruptcy,NB-Non-Bankruptcy) 
+
+1. Industrial Risk: {P,A,N} 
+2. Management Risk: {P,A,N} 
+3. Financial Flexibility: {P,A,N} 
+4. Credibility: {P,A,N} 
+5. Competitiveness: {P,A,N} 
+6. Operating Risk: {P,A,N} 
+7. Class: {B,NB}
+
+
+* Relevant Papers:
+
+The parameters which we used for collecting the dataset is referred from the paper 'The discovery of expertsâ€™ decision rules from qualitative bankruptcy data using genetic algorithms' by Myoung-Jong Kim*, Ingoo Han.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: sa-heart, Id: 1498
+"dataset168_sa-heart_id1498.Rda"
+
+
+**Author**:   
+**Source**: http://statweb.stanford.edu/~tibs/ElemStatLearn/data.html   
+**Please cite**:   
+
+* Title:
+
+South Africa Heart Disease Dataset
+
+* Description
+
+A retrospective sample of males in a heart-disease high-risk region of the Western Cape, South Africa. There are roughly two controls per case of CHD. Many of the CHD positive men have undergone blood pressure reduction treatment and other programs to reduce their risk factors after their CHD event. In some cases the measurements were made after these treatments. These data are taken from a larger dataset, described in  Rousseauw et al, 1983, South African Medical
+Journal. 
+
+* Attributes:
+
+sbp  systolic blood pressure   
+tobacco  cumulative tobacco (kg)   
+ldl  low densiity lipoprotein cholesterol   
+adiposity  
+famhist  family history of heart disease (Present, Absent)   
+typea  type-A behavior   
+obesity   
+alcohol  current alcohol consumption   
+age  age at onset   
+chd  response, coronary heart disease
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: skin-segmentation, Id: 1502
+"dataset237_skin-segmentation_id1502.Rda"
+
+
+**Author**: Rajen Bhatt, Abhinav Dhall  
+**Source**: UCI   
+**Please cite**: Rajen Bhatt, Abhinav Dhall, 'Skin Segmentation Dataset', UCI Machine Learning Repository   
+
+* Title:
+
+Skin Segmentation Data Set 
+
+* Abstract: 
+
+The Skin Segmentation dataset is constructed over B, G, R color space. Skin and Nonskin dataset is generated using skin textures from face images of diversity of age, gender, and race people.
+
+* Source:
+
+Rajen Bhatt, Abhinav Dhall, rajen.bhatt '@' gmail.com, IIT Delhi.
+
+* Data Set Information:
+
+The skin dataset is collected by randomly sampling B,G,R values from face images of various age groups (young, middle, and old), race groups (white, black, and asian), and genders obtained from FERET database and PAL database. Total learning sample size is 245057; out of which 50859 is the skin samples and 194198 is non-skin samples. Color FERET Image Database: [Web Link], PAL Face Database from Productive Aging Laboratory, The University of Texas at Dallas: [Web Link]. 
+
+
+* Attribute Information:
+
+This dataset is of the dimension 245057 * 4 where first three columns are B,G,R (x1,x2, and x3 features) values and fourth column is of the class labels (decision variable y).
+
+
+* Relevant Papers:
+
+1. Rajen B. Bhatt, Gaurav Sharma, Abhinav Dhall, Santanu Chaudhury, â€œEfficient skin region segmentation using low complexity fuzzy decision tree modelâ€, IEEE-INDICON 2009, Dec 16-18, Ahmedabad, India, pp. 1-4. 
+2. Abhinav Dhall, Gaurav Sharma, Rajen Bhatt, Ghulam Mohiuddin Khan, â€œAdaptive Digital Makeupâ€, in Proc. of International Symposium on Visual Computing (ISVC) 2009, Nov. 30 â€“ Dec. 02, Las Vegas, Nevada, USA, Lecture Notes in Computer Science, Vol. 5876, pp. 728-736.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: steel-plates-fault, Id: 1504
+"dataset204_steel-plates-fault_id1504.Rda"
+
+
+**Author**: Semeion, Research Center of Sciences of Communication, Rome, Italy.     
+**Source**: [UCI](http://archive.ics.uci.edu/ml/datasets/steel+plates+faults)     
+**Please cite**: Dataset provided by Semeion, Research Center of Sciences of Communication, Via Sersale 117, 00128, Rome, Italy.  
+
+**Steel Plates Faults Data Set**  
+A dataset of steel plates' faults, classified into 7 different types. The goal was to train machine learning for automatic pattern recognition.
+
+The dataset consists of 27 features describing each fault (location, size, ...) and 7 binary features indicating the type of fault (on of 7: Pastry, Z_Scratch, K_Scatch, Stains, Dirtiness, Bumps, Other_Faults). The latter is commonly used as a binary classification target ('common' or 'other' fault.)
+
+### Attribute Information  
+* V1: X_Minimum  
+* V2: X_Maximum  
+* V3: Y_Minimum  
+* V4: Y_Maximum  
+* V5: Pixels_Areas  
+* V6: X_Perimeter  
+* V7: Y_Perimeter  
+* V8: Sum_of_Luminosity  
+* V9: Minimum_of_Luminosity  
+* V10: Maximum_of_Luminosity  
+* V11: Length_of_Conveyer  
+* V12: TypeOfSteel_A300  
+* V13: TypeOfSteel_A400  
+* V14: Steel_Plate_Thickness  
+* V15: Edges_Index  
+* V16: Empty_Index  
+* V17: Square_Index  
+* V18: Outside_X_Index  
+* V19: Edges_X_Index  
+* V20: Edges_Y_Index  
+* V21: Outside_Global_Index  
+* V22: LogOfAreas  
+* V23: Log_X_Index  
+* V24: Log_Y_Index  
+* V25: Orientation_Index  
+* V26: Luminosity_Index  
+* V27: SigmoidOfAreas  
+* V28: Pastry  
+* V29: Z_Scratch  
+* V30: K_Scatch  
+* V31: Stains  
+* V32: Dirtiness  
+* V33: Bumps  
+* Class: Other_Faults  
+
+### Relevant Papers  
+1.M Buscema, S Terzi, W Tastle, A New Meta-Classifier,in NAFIPS 2010, Toronto (CANADA),26-28 July 2010, 978-1-4244-7858-6/10 Â©2010 IEEE  
+2.M Buscema, MetaNet: The Theory of Independent Judges, in Substance Use & Misuse, 33(2), 439-461,1998
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: wdbc, Id: 1510
+"dataset169_wdbc_id1510.Rda"
+
+
+**Author**: William H. Wolberg, W. Nick Street, Olvi L. Mangasarian    
+**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(original)), [University of Wisconsin](http://pages.cs.wisc.edu/~olvi/uwmp/cancer.html) - 1995  
+**Please cite**: [UCI](https://archive.ics.uci.edu/ml/citation_policy.html)     
+
+**Breast Cancer Wisconsin (Diagnostic) Data Set (WDBC).** Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image. The target feature records the prognosis (benign (1) or malignant (2)). [Original data available here](ftp://ftp.cs.wisc.edu/math-prog/cpo-dataset/machine-learn/cancer/) 
+
+Current dataset was adapted to ARFF format from the UCI version. Sample code ID's were removed.  
+
+! Note that there is also a related Breast Cancer Wisconsin (Original) Data Set with a different set of features, better known as [breast-w](https://www.openml.org/d/15).
+
+
+### Feature description  
+
+Ten real-valued features are computed for each of 3 cell nuclei, yielding a total of 30 descriptive features. See the papers below for more details on how they were computed. The 10 features (in order) are:  
+
+a) radius (mean of distances from center to points on the perimeter)  
+b) texture (standard deviation of gray-scale values)  
+c) perimeter  
+d) area  
+e) smoothness (local variation in radius lengths)  
+f) compactness (perimeter^2 / area - 1.0)  
+g) concavity (severity of concave portions of the contour)  
+h) concave points (number of concave portions of the contour)  
+i) symmetry  
+j) fractal dimension ("coastline approximation" - 1)  
+
+### Relevant Papers   
+
+W.N. Street, W.H. Wolberg and O.L. Mangasarian. Nuclear feature extraction for breast tumor diagnosis. IS&T/SPIE 1993 International Symposium on Electronic Imaging: Science and Technology, volume 1905, pages 861-870, San Jose, CA, 1993. 
+
+O.L. Mangasarian, W.N. Street and W.H. Wolberg. Breast cancer diagnosis and prognosis via linear programming. Operations Research, 43(4), pages 570-577, July-August 1995.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: wholesale-customers, Id: 1511
+"dataset170_wholesale-customers_id1511.Rda"
+
+
+**Author**: Margarida G. M. S. Cardoso      
+**Source**: UCI     
+**Please cite**: Abreu, N. (2011). Analise do perfil do cliente Recheio e desenvolvimento de um sistema promocional. Mestrado em Marketing, ISCTE-IUL, Lisbon.  
+
+* Title:   
+Wholesale customers Data Set 
+
+* Abstract:   
+The data set refers to clients of a wholesale distributor. It includes the annual spending in monetary units (m.u.) on diverse product categories
+
+* Source:  
+Margarida G. M. S. Cardoso, margarida.cardoso '@' iscte.pt, ISCTE-IUL, Lisbon, Portugal
+
+* Attribute Information:
+
+1) FRESH: annual spending (m.u.) on fresh products (Continuous); 
+2) MILK: annual spending (m.u.) on milk products (Continuous); 
+3) GROCERY: annual spending (m.u.)on grocery products (Continuous); 
+4) FROZEN: annual spending (m.u.)on frozen products (Continuous) 
+5) DETERGENTS_PAPER: annual spending (m.u.) on detergents and paper products (Continuous) 
+6) DELICATESSEN: annual spending (m.u.)on and delicatessen products (Continuous); 
+7) CHANNEL: customers' Channel - Horeca (Hotel/Restaurant/Café) or Retail channel (Nominal) 
+8) REGION: customers' Region - Lisbon, Porto or Other (Nominal) 
+
+Descriptive Statistics: 
+
+(Minimum, Maximum, Mean, Std. Deviation) 
+FRESH ( 3, 112151, 12000.30, 12647.329) 
+MILK (55, 73498, 5796.27, 7380.377) 
+GROCERY (3, 92780, 7951.28, 9503.163) 
+FROZEN (25, 60869, 3071.93, 4854.673) 
+DETERGENTS_PAPER (3, 40827, 2881.49, 4767.854) 
+DELICATESSEN (3, 47943, 1524.87, 2820.106) 
+
+REGION Frequency 
+Lisbon 77 
+Oporto 47 
+Other Region 316 
+Total 440 
+
+CHANNEL Frequency 
+Horeca 298 
+Retail 142 
+Total 440 
+
+
+* Relevant Papers:
+
+Cardoso, Margarida G.M.S. (2013). Logical discriminant models â€“ Chapter 8 in Quantitative Modeling in Marketing and Management Edited by Luiz Moutinho and Kun-Huang Huarng. World Scientific. p. 223-253. ISBN 978-9814407717 
+
+Jean-Patrick Baudry, Margarida Cardoso, Gilles Celeux, Maria JosÃ© Amorim, Ana Sousa Ferreira (2012). Enhancing the selection of a model-based clustering with external qualitative variables. RESEARCH REPORT NÂ° 8124, October 2012, Project-Team SELECT. INRIA Saclay - ÃŽle-de-France, Projet select, UniversitÃ© Paris-Sud 11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: vertebra-column, Id: 1524
+"dataset171_vertebra-column_id1524.Rda"
+
+
+**Author**: Guilherme de Alencar Barreto, Ajalmar R. da Rocha Neto, Henrique Antonio Fonseca da Mota Filho       
+**Source**: [original](http://www.openml.org/d/1523) - UCI   
+**Please cite**:   
+
+* Dataset Title: Vertebra Column - 2 classes
+
+* Abstract:   
+Data set containing values for six biomechanical features used to classify orthopaedic patients into 3 classes (normal, disk hernia or spondilolysthesis) or 2 classes (normal or abnormal).
+
+* Source:
+
+Guilherme de Alencar Barreto (guilherme '@' deti.ufc.br) & Ajalmar R. da Rocha Neto (ajalmar '@' ifce.edu.br), Department of Teleinformatics Engineering, Federal University of Ceará, Fortaleza, Ceará, Brazil. 
+
+Henrique Antonio Fonseca da Mota Filho (hdamota '@' gmail.com), Hospital Monte Klinikum, Fortaleza, Ceará, Brazil.
+
+
+* Data Set Information:
+
+Biomedical data set built by Dr. Henrique da Mota during a medical residence period in the Group of Applied Research in Orthopaedics (GARO) of the Centre Médico-Chirurgical de Réadaptation des Massues, Lyon, France. The data have been organized in two different but related classification tasks. The first task consists in classifying patients as belonging to one out of three categories: Normal (100 patients), Disk Hernia (60 patients) or Spondylolisthesis (150 patients). For the second task, the categories Disk Hernia and Spondylolisthesis were merged into a single category labelled as 'abnormal'. Thus, the second task consists in classifying patients as belonging to one out of two categories: Normal (100 patients) or Abnormal (210 patients). We provide files also for use within the WEKA environment.
+
+
+* Attribute Information:
+
+Each patient is represented in the data set by six biomechanical attributes derived from the shape and orientation of the pelvis and lumbar spine (in this order): pelvic incidence, pelvic tilt, lumbar lordosis angle, sacral slope, pelvic radius and grade of spondylolisthesis. The following convention is used for the class labels: DH (Disk Hernia), Spondylolisthesis (SL), Normal (NO) and Abnormal (AB).
+
+
+* Relevant Papers:
+
+(1) Berthonnaud, E., Dimnet, J., Roussouly, P. & Labelle, H. (2005). 'Analysis of the sagittal balance of the spine and pelvis using shape and orientation parameters', Journal of Spinal Disorders & Techniques, 18(1):40â€“47. 
+
+(2) Rocha Neto, A. R. & Barreto, G. A. (2009). 'On the Application of Ensembles of Classifiers to the Diagnosis of Pathologies of the Vertebral Column: A Comparative Analysis', IEEE Latin America Transactions, 7(4):487-496. 
+
+(3) Rocha Neto, A. R., Sousa, R., Barreto, G. A. & Cardoso, J. S. (2011). 'Diagnostic of Pathology on the Vertebral Column with Embedded Reject Optionâ€, Proceedings of the 5th Iberian Conference on Pattern Recognition and Image Analysis (IbPRIA'2011), Gran Canaria, Spain, Lecture Notes on Computer Science, vol. 6669, p. 588-595.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: autoUniv-au1-1000, Id: 1547
+"dataset205_autoUniv-au1-1000_id1547.Rda"
+
+
+**Author**: Ray. J. Hickey   
+**Source**: UCI  
+**Please cite**:   
+
+* Dataset Title:  
+
+AutoUniv Dataset  
+data problem: autoUniv-au1-1000   
+
+* Abstract:   
+
+AutoUniv is an advanced data generator for classifications tasks. The aim is to reflect the nuances and heterogeneity of real data. Data can be generated in .csv, ARFF or C4.5 formats.
+
+* Source:  
+
+AutoUniv was developed by Ray. J. Hickey. Email: ray.j.hickey '@' gmail.com 
+AutoUniv web-site: http://sites.google.com/site/autouniv/.
+
+
+* Data Set Information:
+
+The user first creates a classification model and then generates classified examples from it. To create a model, the following are specified: the number of attributes (up to 1000) and their type (discrete or continuous), the number of classes (up to 10), the complexity of the underlying rules and the noise level. AutoUniv then produces a model through a process of constrained randomised search to satisfy the user's requirements. A model can have up to 3000 rules. Rare class models can be designed. A sequence of models can be designed to reflect concept and/or population drift. 
+
+AutoUniv creates three text files for a model: a Prolog specification of the model used to generate examples (.aupl); a user-friendly statement of the classification rules in an 'if ... then' format (.aurules); a statistical summary of the main properties of the model, including its Bayes rate (.auprops).
+
+
+* Attribute Information: 
+
+Attributes may be discrete with up to 10 values or continuous. A discrete attribute can be nominal with values v1, v2, v3 ... or integer with values 0, 1, 2 , ... .
+
+
+* Relevant Papers:
+
+Marrs, G, Hickey, RJ and Black, MM (2010) Modeling the example life-cycle in an online classification learner. In Proceedings of HaCDAIS 2010: International Workshop on Handling Concept Drift in Adaptive Information Systems. 
+[Web Link]#proc . 
+
+Marrs, G, Hickey, RJ and Black, MM (2010) The Impact of Latency on Online Classification Learning with Concept Drift. In Y. Bi and M.A. Williams (Eds.): KSEM 2010, LNAI 6291, Springer-Verlag, Berlin, pp. 459â€“469. 
+
+Hickey, RJ (2007) Structure and Majority Classes in Decision Tree Learning. Journal of Machine Learning Research, 8, pp. 1747-1768.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: wilt, Id: 1570
+"dataset206_wilt_id1570.Rda"
+
+
+**Author**: Brian Johnson     
+**Source**: [UCI] (https://archive.ics.uci.edu/ml/datasets/Wilt)  
+**Please cite**: Johnson, B., Tateishi, R., Hoan, N., 2013. A hybrid pansharpening approach and multiscale object-based image analysis for mapping diseased pine and oak trees. International Journal of Remote Sensing, 34 (20), 6969-6982.   
+
+
+### Dataset:  
+Wilt Data Set 
+
+### Abstract:    
+High-resolution Remote Sensing data set (Quickbird). Small number of training samples of diseased trees, large number for other land cover. Testing data set from stratified random sample of image.
+
+### Source:
+  
+Brian Johnson; 
+Institute for Global Environmental Strategies; 
+2108-11 Kamiyamaguchi, Hayama, Kanagawa,240-0115 Japan; 
+Email: Johnson '@' iges.or.jp 
+
+
+### Data Set Information:  
+
+This data set contains some training and testing data from a remote sensing study by Johnson et al. (2013) that involved detecting diseased trees in Quickbird imagery. There are few training samples for the 'diseased trees' class (74) and many for 'other land cover' class (4265). 
+
+The data set consists of image segments, generated by segmenting the pansharpened image. The segments contain spectral information from the Quickbird multispectral image bands and texture information from the panchromatic (Pan) image band. The testing data set is for the row with â€œSegmentation scale 15â€ segments and â€œoriginal multi-spectral imageâ€ Spectral information in Table 2 of the reference (i.e. row 5). Please see the reference below for more information on the data set, and please cite the reference if you use this data set. Enjoy! 
+
+### Attribute Information:
+
+class: 'w' (diseased trees), 'n' (all other land cover)   
+GLCM_Pan: GLCM mean texture (Pan band)   
+Mean_G: Mean green value   
+Mean_R: Mean red value   
+Mean_NIR: Mean NIR value   
+SD_Pan: Standard deviation (Pan band)   
+
+
+### Relevant Papers:
+
+Johnson, B., Tateishi, R., Hoan, N., 2013. A hybrid pansharpening approach and multiscale object-based image analysis for mapping diseased pine and oak trees. International Journal of Remote Sensing, 34 (20), 6969-6982.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
