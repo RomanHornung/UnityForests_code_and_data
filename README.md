@@ -4,8 +4,8 @@ Authors: Roman Hornung<sup>1,2,*</sup> and Alexander Hapfelmeier<sup>3,4</sup>
 
 1. Institute for Medical Information Processing, Biometry and Epidemiology, Faculty of Medicine, Ludwig Maximilian University of Munich (LMU), Munich, Germany, ORCID: 0000-0002-6036-1495.
 2. Munich Center for Machine Learning (MCML), Munich, Germany.
-3. Institute of General Practice and Health Services Research, Department Clinical Medicine, TUM School of Medicine and Health, Technical University of Munich (TUM), Munich, Germany, ORCID: 0000-0001-6765-6352.
-4. Institute of AI and Informatics in Medicine, TUM School of Medicine and Health, Technical University of Munich (TUM), Munich, Germany
+3. Institute of AI and Informatics in Medicine, Department Clinical Medicine, TUM School of Medicine and Health, Technical University of Munich (TUM), Munich, Germany, ORCID: 0000-0001-6765-6352.
+4. Institute of General Practice and Health Services Research, Department Clinical Medicine, TUM School of Medicine and Health, Technical University of Munich (TUM), Munich, Germany
 
 \* For questions, please contact: hornung@ibe.med.uni-muenchen.de
 

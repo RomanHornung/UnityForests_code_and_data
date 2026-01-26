@@ -257,7 +257,7 @@ p_auc <- ggplot(results_AUC_num,
     axis.title.x = element_blank(),
     axis.title.y = element_text(size = 12),
     panel.grid.minor = element_blank(),
-    strip.text = element_text(size = 12),
+    strip.text = element_text(size = 14),
     legend.title = element_text(size = 12),
     legend.text  = element_text(size = 11)
   )
@@ -415,7 +415,7 @@ p_rank <- ggplot(results_ranks_plot,
     axis.title.x = element_blank(),
     axis.title.y = element_text(size = 12),
     panel.grid.minor = element_blank(),
-    strip.text = element_text(size = 12),
+    strip.text = element_text(size = 14),
     legend.title = element_text(size = 12),
     legend.text  = element_text(size = 11)
   )
@@ -501,7 +501,8 @@ pat_scale  <- scale_pattern_manual(values = c("1" = "none", "2" = "stripe"))
 
 fill_cols <- scale_fill_manual(values = c("1" = "#8A01FEFF", "2" = "#FFB24DFF"))
 
-
+x_lab_size <- y_lab_size <- 14
+x_text_size <- 12
 
 library("scales")  
 
@@ -511,7 +512,7 @@ p1 <- ggplot(dataset, aes(x = factor(X4), fill = y, pattern = y)) + theme_bw() +
   fill_cols + pat_scale +
   theme(legend.position = "none",
         axis.text = element_text(color="black"),
-        axis.title.x = element_text(vjust = 15)) +
+        axis.title.x = element_text(size = x_lab_size, vjust = 15)) +
   labs(x = expression(X[bne*"_ql"]), y = "Proportion")
 
 
@@ -545,9 +546,10 @@ p2 <- ggplot(dataset2, aes(x = grp, y = X5, fill = factor(y), pattern = factor(y
   labs(y = expression(X[ql * "_" * bne * "_" * s]), fill = "y") +
   theme_bw() +
   theme(axis.text = element_text(color = "black"),
-        axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
+        axis.text.x = element_text(size = x_text_size, angle = 45, hjust = 1, vjust = 1),
         legend.position = "none",
-        axis.title.x = element_blank())
+        axis.title.x = element_blank(),
+        axis.title.y = element_text(size = y_lab_size))
 
 
 
@@ -556,7 +558,7 @@ p3 <- ggplot(dataset, aes(x = factor(X8), fill = y, pattern = y)) + theme_bw() +
   geom_bar_pattern(position = "fill", pattern_size = 0.2, pattern_colour = "black", pattern_fill   = "black", pattern_spacing = 0.03, pattern_density = 0.45, pattern_key_scale_factor = 0.6) +
   scale_y_continuous(labels = percent_format(accuracy = 1)) +
   fill_cols + pat_scale +
-  theme(legend.position = "none", axis.text = element_text(color="black"), axis.title.x = element_text(vjust = 15)) +
+  theme(legend.position = "none", axis.text = element_text(color="black"), axis.title.x = element_text(size = x_lab_size, vjust = 15)) +
   labs(x = expression(X[be*"_ql"]), y = "Proportion")
   
 
@@ -593,9 +595,10 @@ p4 <- ggplot(dataset2, aes(x = grp, y = X9, fill = factor(y), pattern = factor(y
   theme_bw() +
   theme(
     axis.text = element_text(color = "black"),
-    axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
+    axis.text.x = element_text(size = x_text_size, angle = 45, hjust = 1, vjust = 1),
     legend.position = "none",
-    axis.title.x = element_blank()
+    axis.title.x = element_blank(),
+    axis.title.y = element_text(size = y_lab_size)
   )
 
 
@@ -605,7 +608,7 @@ p5 <- ggplot(dataset, aes(x = factor(X12), fill = y, pattern = y)) + theme_bw() 
   geom_bar_pattern(position = "fill", pattern_size = 0.2, pattern_colour = "black", pattern_fill   = "black", pattern_spacing = 0.03, pattern_density = 0.45, pattern_key_scale_factor = 0.6) +
   scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
   fill_cols + pat_scale +
-  theme(legend.position = "none", axis.text = element_text(color="black"), axis.title.x = element_text(vjust = 15)) +
+  theme(legend.position = "none", axis.text = element_text(color="black"), axis.title.x = element_text(size = x_lab_size, vjust = 15)) +
   labs(x = expression(X[bne*"_qn"]), y = "Proportion")
 
 
@@ -642,9 +645,10 @@ p6 <- ggplot(dataset2, aes(x = grp, y = X13, fill = factor(y), pattern = factor(
   theme_bw() +
   theme(
     axis.text = element_text(color = "black"),
-    axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
+    axis.text.x = element_text(size = x_text_size, angle = 45, hjust = 1, vjust = 1),
     legend.position = "none",
-    axis.title.x = element_blank()
+    axis.title.x = element_blank(),
+    axis.title.y = element_text(size = y_lab_size)
   )
 
 
@@ -656,7 +660,7 @@ p7 <- ggplot(dataset, aes(x = X16, fill = y, pattern = y)) + theme_bw() +
   geom_bar_pattern(position = "fill", pattern_size = 0.2, pattern_colour = "black", pattern_fill   = "black", pattern_spacing = 0.03, pattern_density = 0.45, pattern_key_scale_factor = 0.6) +
   scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
   fill_cols + pat_scale +
-  theme(legend.position = "none", axis.text = element_text(color="black"), axis.title.x = element_text(vjust = 15)) +
+  theme(legend.position = "none", axis.text = element_text(color="black"), axis.title.x = element_text(size = x_lab_size, vjust = 15)) +
   labs(x = expression(X[cne*"_ql"]), y = "Proportion")
 
 
@@ -695,9 +699,10 @@ p8 <- ggplot(dataset2, aes(x = grp, y = X17, fill = factor(y), pattern = factor(
   theme_bw() +
   theme(
     axis.text = element_text(color = "black"),
-    axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
+    axis.text.x = element_text(size = x_text_size, angle = 45, hjust = 1, vjust = 1),
     legend.position = "none",
-    axis.title.x = element_blank()
+    axis.title.x = element_blank(),
+    axis.title.y = element_text(size = y_lab_size)
   )
 
 
