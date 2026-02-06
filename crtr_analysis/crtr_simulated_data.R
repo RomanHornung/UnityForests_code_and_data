@@ -212,7 +212,7 @@ permvim_dgp2 <- ranger::ranger(dependent.variable.name = "y", data=dataset, impo
 
 
 
-# Figure 9: Visualization of the CRTRs for the three covariates with the highest unity
+# Figure S15: Visualization of the CRTRs for the three covariates with the highest unity
 # VIM values in a dataset generated from DGP 2 (n = 500).
 #######################################################################################
 
@@ -233,16 +233,16 @@ p <- plots_temp[[1]]$tree_plot / plots_temp[[1]]$density_plot /
                                      2, 1,   # tree 2 : density 2
                                      2, 1))  # tree 3 : density 3
 
-# Figure 9:
+# Figure S15:
 
-ggsave("../figures/Fig9.pdf", device=cairo_pdf, plot = p, width = 14, height = 16)
-ggsave("../figures/Fig9.eps", device=cairo_pdf,plot = p, width = 14, height = 16)
-
-
+ggsave("../figures/FigS15.pdf", device=cairo_pdf, plot = p, width = 14, height = 16)
+ggsave("../figures/FigS15.eps", device=cairo_pdf,plot = p, width = 14, height = 16)
 
 
 
-# Figure 10: Visualization of the CRTRs for the fourth and fifth highest-ranked covariates
+
+
+# Figure S16: Visualization of the CRTRs for the fourth and fifth highest-ranked covariates
 # according to the unity VIM in a dataset generated from DGP 2 (n = 500). 
 ###########################################################################################
 
@@ -251,15 +251,15 @@ p <- plots_temp[[4]]$tree_plot / plots_temp[[4]]$bar_plot /
   patchwork::plot_layout(heights = c(2, 1,  
                                      2, 1)) 
 
-# Figure 10:
+# Figure S16:
 
-ggsave("../figures/Fig10.pdf", device=cairo_pdf, plot = p, width = 14, height = 11)
-ggsave("../figures/Fig10.eps", device=cairo_pdf,plot = p, width = 14, height = 11)
-
-
+ggsave("../figures/FigS16.pdf", device=cairo_pdf, plot = p, width = 14, height = 11)
+ggsave("../figures/FigS16.eps", device=cairo_pdf,plot = p, width = 14, height = 11)
 
 
-# Figures S15-S23: Visualization of the CRTRs for all covariates in a dataset generated
+
+
+# Figures S17-S25: Visualization of the CRTRs for all covariates in a dataset generated
 # from DGP 2 (n = 500).
 #########################################################################################
 
@@ -277,8 +277,8 @@ p <- plots_temp[[1]]$tree_plot / plots_temp[[1]]$density_plot /
                                      2, 1))  # tree 3 : density 3
 
 
-ggsave("../figures/FigS15.eps", device=cairo_pdf,plot = p, width = 14, height = 16)
-ggsave("../figures/FigS15.pdf", device=cairo_pdf,plot = p, width = 14, height = 16)
+ggsave("../figures/FigS17.eps", device=cairo_pdf,plot = p, width = 14, height = 16)
+ggsave("../figures/FigS17.pdf", device=cairo_pdf,plot = p, width = 14, height = 16)
 
 
 for (i in setdiff(1:8, 2)) {
@@ -304,8 +304,8 @@ for (i in setdiff(1:8, 2)) {
     patchwork::plot_layout(heights = c(2, 1,  
                                        2, 1)) 
   
-  ggsave(paste0("../figures/FigS", i+15, ".eps"), device=cairo_pdf, plot = p, width = 14, height = 16)
-  ggsave(paste0("../figures/FigS", i+15, ".pdf"), device=cairo_pdf, plot = p, width = 14, height = 16)
+  ggsave(paste0("../figures/FigS", i+17, ".eps"), device=cairo_pdf, plot = p, width = 14, height = 16)
+  ggsave(paste0("../figures/FigS", i+17, ".pdf"), device=cairo_pdf, plot = p, width = 14, height = 16)
   
 }
 
@@ -319,8 +319,8 @@ p <- plots_temp[[ind_temp]]$tree_plot / plots_temp[[ind_temp]]$density_plot /
   patchwork::plot_layout(heights = c(2, 1,  
                                      2, 1)) 
 
-ggsave("../figures/FigS17.eps", device=cairo_pdf,plot = p, width = 14, height = 16)
-ggsave("../figures/FigS17.pdf", device=cairo_pdf,plot = p, width = 14, height = 16)
+ggsave("../figures/FigS19.eps", device=cairo_pdf,plot = p, width = 14, height = 16)
+ggsave("../figures/FigS19.pdf", device=cairo_pdf,plot = p, width = 14, height = 16)
 
 
 
