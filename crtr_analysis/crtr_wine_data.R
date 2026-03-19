@@ -66,7 +66,7 @@ cor(unityvim, permvim, method="spearman")
 
 
 
-# Figure S26: Unity and permutation VIM values for wine dataset (n = 178)
+# Figure S30: Unity and permutation VIM values for wine dataset (n = 178)
 #########################################################################
 
 unityvim <- sort(unityvim, decreasing=TRUE)
@@ -100,17 +100,17 @@ p2 <- make_barplot(df2, "Permutation VIM")
 
 p1 + p2
 
-# Figure S26:
+# Figure S30:
 
-ggsave("../figures/FigS26.pdf", width=10, height=5)
-ggsave("../figures/FigS26.eps", width=10, height=5)
-
-
+ggsave("../figures/FigS30.pdf", width=10, height=5)
+ggsave("../figures/FigS30.eps", width=10, height=5)
 
 
 
 
-# Figure 9: Visualization of the CRTRs for the three covariates with the highest unity
+
+
+# Figure 6: Visualization of the CRTRs for the three covariates with the highest unity
 # VIM values in the wine dataset (n = 178).
 #######################################################################################
 
@@ -129,10 +129,10 @@ p <- plots_temp[[1]]$tree_plot / plots_temp[[1]]$density_plot /
                                      2, 1,   # tree 2 : density 2
                                      2, 1))  # tree 3 : density 3
 
-# Figure 9:
+# Figure 6:
 
-ggsave("../figures/Fig9.pdf", device=cairo_pdf, plot = p, width = 14, height = 16)
-ggsave("../figures/Fig9.eps", device=cairo_pdf,plot = p, width = 14, height = 16)
+ggsave("../figures/Fig6.pdf", device=cairo_pdf, plot = p, width = 14, height = 16)
+ggsave("../figures/Fig6.eps", device=cairo_pdf,plot = p, width = 14, height = 16)
 
   
 
@@ -140,7 +140,7 @@ ggsave("../figures/Fig9.eps", device=cairo_pdf,plot = p, width = 14, height = 16
 
 
 
-# Figure 10: Visualization of the CRTRs for the fourth and fifth highest-ranked covariates
+# Figure 7: Visualization of the CRTRs for the fourth and fifth highest-ranked covariates
 # according to the unity VIM in the wine dataset (n = 178). 
 #########################################################################################
 
@@ -149,7 +149,7 @@ p <- plots_temp[[4]]$tree_plot / (plots_temp[[4]]$density_plot + plots_temp[[4]]
   patchwork::plot_layout(heights = c(2, 1,  
                                      2, 1)) 
 
-# Figure 10:
+# Figure 7:
 
-ggsave("../figures/Fig10.pdf", device=cairo_pdf, plot = p, width = 14, height = 11)
-ggsave("../figures/Fig10.eps", device=cairo_pdf,plot = p, width = 14, height = 11)
+ggsave("../figures/Fig7.pdf", device=cairo_pdf, plot = p, width = 14, height = 11)
+ggsave("../figures/Fig7.eps", device=cairo_pdf,plot = p, width = 14, height = 11)

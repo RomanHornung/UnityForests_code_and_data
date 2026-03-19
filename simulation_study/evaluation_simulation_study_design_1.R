@@ -89,7 +89,7 @@ label_order_parsed <- c(
 
 # Method order + pretty labels for plots and tables
 method_levels_plot  <- c("unity_vim", "perm", "gini_corr")
-method_labels_plot  <- c("Unity_vim", "Perm", "Gini_corr")
+method_labels_plot  <- c("Unity_vim", "Perm", "Gini")
 table_method_levels <- method_levels_plot
 
 # dodge to avoid overlap at same sample size
@@ -193,7 +193,7 @@ results_AUC_num <- results_AUC_num_wide %>%
 
 
 
-# Figure 3: Mean AUC values with 95% confidence intervals per considered sample size
+# Figures 3 and S5: Mean AUC values with 95% confidence intervals per considered sample size
 # and method for DGP 1
 #####################################################################################
 
@@ -227,6 +227,12 @@ ggsave("../figures/Fig3.pdf", p_auc, width = 9, height = 9)
 ggsave("../figures/Fig3.eps", p_auc, width = 9, height = 9)
 
 
+# Figure S5 (same as Figure 3):
+
+ggsave("../figures/FigS5.pdf", p_auc, width = 9, height = 9)
+ggsave("../figures/FigS5.eps", p_auc, width = 9, height = 9)
+
+
 
 
 
@@ -254,7 +260,7 @@ results_AUC_table <- results_AUC_num %>%
       Method,
       "unity_vim" = "Unity\\_vim",
       "perm"      = "Perm",
-      "gini_corr" = "Gini\\_corr"
+      "gini_corr" = "Gini"
     )
   ) %>%
   select(Covariate, Method, `n = 100`, `n = 300`, `n = 500`, `n = 1000`)
@@ -318,7 +324,7 @@ results_ranks_sum <- results_ranks_long %>%
 
 
 
-# Figure 4: Median ranks with 25% and 75% quartiles per considered sample size and
+# Figure S6: Median ranks with 25% and 75% quartiles per considered sample size and
 # method for DGP 1
 ###################################################################################
 
@@ -347,10 +353,10 @@ p_rank <- ggplot(results_ranks_sum,
   )
 
 
-# Figure 4:
+# Figure S6:
 
-ggsave("../figures/Fig4.pdf", p_rank, width = 9, height = 9)
-ggsave("../figures/Fig4.eps", p_rank, width = 9, height = 9)
+ggsave("../figures/FigS6.pdf", p_rank, width = 9, height = 9)
+ggsave("../figures/FigS6.eps", p_rank, width = 9, height = 9)
 
 
 
@@ -378,7 +384,7 @@ results_rank_table <- results_ranks_sum %>%
       Method,
       "unity_vim" = "Unity\\_vim",
       "perm"      = "Perm",
-      "gini_corr" = "Gini\\_corr"
+      "gini_corr" = "Gini"
     )
   ) %>%
   select(Covariate, Method, `n = 100`, `n = 300`, `n = 500`, `n = 1000`)

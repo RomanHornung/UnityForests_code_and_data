@@ -128,7 +128,7 @@ parse_n_num <- function(n_factor) as.numeric(str_extract(as.character(n_factor),
 
 # Method order + pretty labels for plots
 method_levels_plot <- c("unity_vim", "perm", "gini_corr")
-method_labels_plot <- c("Unity_vim", "Perm", "Gini_corr")
+method_labels_plot <- c("Unity_vim", "Perm", "Gini")
 
 # dodge to avoid overlap at same sample size
 pd <- position_dodge(width = 0.55)
@@ -233,7 +233,7 @@ results_AUC_num <- results_AUC_num_wide %>%
 
 
 
-# Figure 5: Mean AUC values with 95% confidence intervals per considered sample size
+# Figure S7: Mean AUC values with 95% confidence intervals per considered sample size
 # and method for DGP 2
 #####################################################################################
 
@@ -262,10 +262,10 @@ p_auc <- ggplot(results_AUC_num,
     legend.text  = element_text(size = 11)
   )
 
-# Figure 5:
+# Figure S7:
 
-ggsave("../figures/Fig5.pdf", p_auc, width = 10, height = 12)
-ggsave("../figures/Fig5.eps", p_auc, width = 10, height = 12)
+ggsave("../figures/FigS7.pdf", p_auc, width = 10, height = 12)
+ggsave("../figures/FigS7.eps", p_auc, width = 10, height = 12)
 
 
 
@@ -329,7 +329,7 @@ results_final <- results_wide %>%
       Method,
       "unity_vim" = "Unity\\_vim",
       "perm"      = "Perm",
-      "gini_corr" = "Gini\\_corr"
+      "gini_corr" = "Gini"
     )
   ) %>%
   select(Covariate, Method, `n = 100`, `n = 300`, `n = 500`, `n = 1000`)
@@ -385,13 +385,13 @@ results_ranks_plot <- results_ranks %>%
                         levels = paste0("n = ", sort(unique(n_num)))),
     method_plot = factor(as.character(method_all),
                          levels = method_levels_plot,   # unity_vim, perm, gini_corr
-                         labels = method_labels_plot)   # Unity_vim, Perm, Gini_corr
+                         labels = method_labels_plot)   # Unity_vim, Perm, Gini
   )
 
 
 
 
-# Figure 6: Median ranks with 25% and 75% quartiles per considered sample size and
+# Figure S8: Median ranks with 25% and 75% quartiles per considered sample size and
 # method for DGP 2
 ###################################################################################
 
@@ -420,10 +420,10 @@ p_rank <- ggplot(results_ranks_plot,
     legend.text  = element_text(size = 11)
   )
   
-# Figure 6:
+# Figure S8:
 
-ggsave("../figures/Fig6.pdf", p_rank, width = 10, height = 12)
-ggsave("../figures/Fig6.eps", p_rank, width = 10, height = 12)
+ggsave("../figures/FigS8.pdf", p_rank, width = 10, height = 12)
+ggsave("../figures/FigS8.eps", p_rank, width = 10, height = 12)
 
 
 
@@ -460,7 +460,7 @@ results_ranks_final <- results_ranks_wide %>%
       Method,
       "unity_vim" = "Unity\\_vim",
       "perm"      = "Perm",
-      "gini_corr" = "Gini\\_corr"
+      "gini_corr" = "Gini"
     )
   ) %>%
   select(Covariate, Method, `n = 100`, `n = 300`, `n = 500`, `n = 1000`)

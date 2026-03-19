@@ -186,10 +186,10 @@ The following provides an overview on which R scripts produce which results:
 
 - `benchmark_study/evaluation_benchmark_study.R`: FigS2, Tab1
 - `hyperparam_benchmark_study/evaluation_hyperparam_benchmark_study.R`: FigS1
-- `simulation_study/evaluation_simulation_study_design_1.R`: Fig1, Fig3, Fig4, FigS3, TabS6, TabS7
-- `simulation_study/evaluation_simulation_study_design_2.R`: Fig2, Fig5, Fig6, FigS4, TabS8, TabS9, TabS10, TabS11
-- `crtr_analysis/crtr_simulated_data.R`: Fig7, Fig8, FigS5, FigS6, FigS7, FigS8, FigS9, FigS10, FigS11, FigS12, FigS13, FigS14, FigS15, FigS16, FigS17, FigS18, FigS19, FigS20, FigS21, FigS22, FigS23, FigS24, FigS25
-- `crtr_analysis/crtr_wine_data.R`: Fig9, Fig10, FigS26
+- `simulation_study/evaluation_simulation_study_design_1.R`: Fig1, Fig3, FigS3, FigS5, FigS6, TabS6, TabS7
+- `simulation_study/evaluation_simulation_study_design_2.R`: Fig2, FigS4, FigS7, FigS8, TabS8, TabS9, TabS10, TabS11
+- `crtr_analysis/crtr_simulated_data.R`: Fig4, Fig5, FigS9, FigS10, FigS11, FigS12, FigS13, FigS14, FigS15, FigS16, FigS17, FigS18, FigS19, FigS20, FigS21, FigS22, FigS23, FigS24, FigS25, FigS26, FigS27, FigS28, FigS29
+- `crtr_analysis/crtr_wine_data.R`: Fig6, Fig7, FigS30
 - `data/make_data_table.R`: TabS1, TabS2, TabS3, TabS4, TabS5
 
 ---
